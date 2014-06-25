@@ -33,8 +33,8 @@ print "  <link rel='stylesheet' href='//netdna.bootstrapcdn.com/font-awesome/4.0
 print "  <link rel='stylesheet' href='//code.jquery.com/mobile/1.4.0/jquery.mobile-1.4.0.min.css'>"
 print "  <script src='//code.jquery.com/jquery-1.10.2.min.js'></script>"
 print "  <script src='//code.jquery.com/mobile/1.4.0/jquery.mobile-1.4.0.min.js'></script>"
-
 print " </head>"
+#TODO If the session is started, read parameter, execute script and process output
 print " <body>"
 print "  <form method='POST'>"
 print "   <h2>Welcome to OpenDomo %s %s </h2>" % (username, password)
