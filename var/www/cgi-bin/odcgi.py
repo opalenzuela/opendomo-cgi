@@ -10,7 +10,7 @@ if environ.has_key('HTTP_COOKIE'):
    for cookie in map(strip, split(environ['HTTP_COOKIE'], ';')):
       (key, value ) = split(cookie, '=');
       if key == "USERNAME":
-         user_id = value
+         username = value
 
       if key == "PASSWORD":
          password = value
@@ -21,8 +21,8 @@ print "Set-Cookie:PASSWORD=XYZ123;\r\n"
 
 # Create instance of FieldStorage 
 form = cgi.FieldStorage() 
-first_name = form.getvalue('USERNAME')
-last_name  = form.getvalue('PASSWORD')
+username = form.getvalue('USERNAME')
+password = form.getvalue('PASSWORD')
 
 print "Content-type:text/html\r\n\r\n"
 print "<html>"
