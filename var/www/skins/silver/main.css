@@ -379,7 +379,7 @@ legend
 
 
 
-/* *** CONTROLES VISUALES ****** */
+/* *** CONTROLES VISUALES ****** 
 
 .on .sw-off{
 	background:transparent url('/images/default/on.png') center center no-repeat;	
@@ -404,6 +404,7 @@ legend
 	text-align: right;
 	background-color: blue;
 }
+*/
 
 .toolbar 
 {
@@ -427,7 +428,7 @@ legend
 .sel {
 	background-color: #DDD;
 }
-
+/*
 #loginbox{
 	border-collapse: collapse;
 	float: center;
@@ -447,28 +448,31 @@ legend
 .detailedlist p {
     display:table-cell;
 }
-
+*/
 
 .categories li a{
 	color: #053f95;
 	background-color: #AAA;	
-	padding: 10px;	
+/*	padding: 10px;	 */
 }
 .categories .selected a {
 	background-color: #FFF;	
 	border-bottom: 4px solid #053f95;
-	padding: 10px;	
+/*	padding: 10px;	 */
 }
 .categories li a:hover {
 	color: #000;
 	background-color: #DDD;		
 	border-bottom: 4px solid #053f95;	
-	padding: 10px;	
+/*	padding: 10px;	 */
 }
 
 #main {
+	border-color: #6E6E6E;
+/*
 	border-left:1px solid #6E6E6E;	
 	border-right:1px solid #6E6E6E;
+*/
 }
 
 
@@ -489,14 +493,9 @@ h2 {
 	border: 1px solid red;
 	background: #FFFFFF;
 }
-
+/*
 .comments, .link {
 	margin: 10px 0px;
-}
-.info, .success, .warning, .error, .validation, .errorcont, .notice, .loading {
-	border: 1px solid;
-	background-repeat: no-repeat;
-	background-position: 10px center;
 }
 
 .error, .errorcont {
@@ -533,7 +532,6 @@ h2 {
 }
 
 
-
 .listbox li, .detailed li, .selectable li
 {
 	vertical-align: middle; 
@@ -557,3 +555,4 @@ li:hover a
 }
 
 
+*/
