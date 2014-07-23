@@ -703,19 +703,10 @@ p {
 
 
 .categories li a{
-	color: #053f95;
-	background-color: #AAA;	
 	padding: 10px;	
 }
 .categories .selected a {
-	background-color: #FFF;	
-	border-bottom: 4px solid #053f95;
-	padding: 10px;	
-}
-.categories li a:hover {
-	color: #000;
-	background-color: #DDD;		
-	border-bottom: 4px solid #053f95;	
+	border-bottom: 4px solid;
 	padding: 10px;	
 }
 
@@ -726,8 +717,14 @@ p {
 	border-radius: 10px;	*/
 	margin 		: 0px;
 	padding		: 10px;	
+	border-left-width: 1px;
+	border-right-width: 1px;
+	border-bottom: none;
+	border-top: none;
+/*
 	border-left:5px solid #053f95;	
 	border-right:5px solid #053f95;
+*/
 	width: auto;
 }
 

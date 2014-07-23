@@ -453,26 +453,14 @@ legend
 .categories li a{
 	color: #053f95;
 	background-color: #AAA;	
-/*	padding: 10px;	 */
 }
 .categories .selected a {
 	background-color: #FFF;	
-	border-bottom: 4px solid #053f95;
-/*	padding: 10px;	 */
-}
-.categories li a:hover {
-	color: #000;
-	background-color: #DDD;		
-	border-bottom: 4px solid #053f95;	
-/*	padding: 10px;	 */
+	border-bottom-color: #053f95;
 }
 
 #main {
 	border-color: #6E6E6E;
-/*
-	border-left:1px solid #6E6E6E;	
-	border-right:1px solid #6E6E6E;
-*/
 }
 
 
