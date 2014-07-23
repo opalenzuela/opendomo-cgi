@@ -289,16 +289,10 @@ a em {
 
 #footer {
 	background-color: white;
-	padding-top: 25px;
 	font-size: 11px;
 	border-width: 1px;
 	border-style: solid;
 	border-top: none;
-	/*
-	border-bottom:5px solid #053f95;
-	border-left:5px solid #053f95;	
-	border-right:5px solid #053f95;	
-	*/
 }
 
 
@@ -694,6 +688,7 @@ p {
 .copyright{
 	margin-top: 5px;
 	text-align:center;
+	padding: 2px;
 }
 .copyright a{
 	text-decoration: none;
