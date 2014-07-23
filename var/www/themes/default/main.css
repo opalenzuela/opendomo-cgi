@@ -713,7 +713,9 @@ p {
 	margin 		: 0px;
 	padding		: 10px;	
 	border-left-width: 1px;
+	border-left-style: solid;
 	border-right-width: 1px;
+	border-right-style: solid;
 	border-bottom: none;
 	border-top: none;
 /*
