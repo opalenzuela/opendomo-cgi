@@ -405,29 +405,23 @@ fieldset
 
 #logoutbutton
 {
-	margin-top: -35px;
 	border: none;
 	background-color: white;
 	background: url(/images/default/logout.png) no-repeat scroll center center;	
 	display: block;
 	color:transparent;
-	margin-top: -10px;
 	display:inline-block;
-	float: left;
 	margin-left: 10px;
 	height: 30px;
 }
 #savebutton
 {
-	margin-top: -35px;
 	border: none;
 	background-color: white;
 	background: url(/images/default/save.png) no-repeat scroll center center;	
-	display: block;
+	display: inline-block;
 	color:transparent;
-	margin-top: -10px;
 	display:inline-block;
-	float: left;
 	margin-left: 10px;
 	height: 30px;
 }
