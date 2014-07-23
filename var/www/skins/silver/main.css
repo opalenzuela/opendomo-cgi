@@ -24,16 +24,19 @@ h1 {
 h2 {
 	color: #222;
 }
+/*
 .listbox li:hover {
 	background: #DFDFDF;
 	color: #222;
 }
+
 .message {
 	border: 1px solid red;
 	background: #FFFFFF;
 }
 .comments {
 }
+
 .error, .errcont {
 	border: 3px solid #F99;
 	background-position: center left;
@@ -66,7 +69,7 @@ h2 {
 	background-color: #FCC;	
 	color: #F00;
 }
-
+*/
 .toolbar {
 /*	background: #BCBCBC;*/
 	margin:0px;
