@@ -22,3 +22,4 @@ This plugin is not yet in a stable version, so it's required to be installed via
     $ plugin_add_from_gh.sh opalenzuela opendomo-cgi
     
 After a few seconds the plugin will be ready in your system. Please, report any problem found in the [Issues section](https://github.com/opalenzuela/opendomo-cgi/issues).
+
