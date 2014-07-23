@@ -371,25 +371,6 @@ input[type=text], input[type=readonly], input[type=datetime], input[type=email],
 	min-width: 200px;
 }
 
-.subtab 
-{
-	border: 0px solid gray;
-	margin-left:20px;
-	border-top-style: hidden;
-	border: 1px solid #cccccc;
-	padding: 1px;	
-	/*
- 	-moz-border-radius-bottomleft: 10px;
-	-moz-border-radius-bottomright: 10px;
- 	-webkit-border-radius-bottomleft: 10px;
-	-webkit-border-radius-bottomright: 10px;
-	border-radius-bottomleft: 10px;
-	border-radius-bottomright: 10px;	
-	*/
-	text-decoration: none;
-	font-size: 12px;
-	background-color: white;
-}
 
 fieldset 
 {
@@ -650,6 +631,7 @@ p {
 	padding:5px;
 	border-bottom-left-radius: 10px;
 	border-bottom-right-radius: 10px;
+	text-align: left;	
 }
 .sel {
 	background-color: #DDD!important;
