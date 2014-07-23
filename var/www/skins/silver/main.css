@@ -103,7 +103,7 @@ h2 {
 
 /* 
  * MAIN.CSS
- */
+
 
 h1 {
 	text-align: center;
@@ -136,7 +136,7 @@ a, a:visited, a:active {
  
 form {
 	margin: 2px;
-}
+} 
 
 .iconlist ul li{
 	border: 1px solid #cccccc;
@@ -183,6 +183,7 @@ a em {
 .ro {
 	padding: 2px;
 }
+*/
 
 #header
 {
@@ -211,14 +212,15 @@ a em {
 
 #footer {
 	background-color: white;
-	padding-top: 25px;
+	border-color: #6E6E6E;
+/*	padding-top: 25px;
 	font-size: 11px;
 	border-bottom:1px solid #6E6E6E;
 	border-left:1px solid #6E6E6E;	
-	border-right:1px solid #6E6E6E;	
+	border-right:1px solid #6E6E6E;	 */
 }
 
-
+/*
 #footer b{
 	font-weight: none;
 }
@@ -238,6 +240,7 @@ width: 90%;
 {
 width: 90%;
 } 
+*/
 
 /*button, .buttonlnk
 {
@@ -293,7 +296,7 @@ button:active, .buttonlnk:active {
 	background:linear-gradient(top,#053F95 0%,#053F95 100%);
 	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#053F95',endColorstr='#053F95',GradientType=0);
 }
-
+/*
 
 .buttonlnk
 {
@@ -301,12 +304,13 @@ button:active, .buttonlnk:active {
 	padding: 4px;
    	height:15px;
 }
+*/
 
 .buttonlnk:link {text-decoration: none;color:#FFF;}
 .buttonlnk:visited {text-decoration: none;color:#FFF;}
 .buttonlnk:active {text-decoration: none;color:#FFF;}
 .buttonlnk:hover {text-decoration: none; color:#FFF;}
-
+/*
 .pressed {
 	border: 2px inset;
 	text-decoration: none;
@@ -322,16 +326,17 @@ button:active, .buttonlnk:active {
 	font-size: 12px;
 	background-color: white;
 }
-
+*/
 fieldset
 {
+/*
 	border: 1px solid #cccccc;
 	border-radius: 10px;
 	-moz-border-radius: 10px;
 	-webkit-border-radius: 10px;
 	margin-bottom: 30px;
 	margin-top: 25px;
-
+*/
 	background: #ffffff; /* Old browsers */
 	background: -moz-linear-gradient(top,  #ffffff 0%, #f6f6f6 47%, #ededed 100%); /* FF3.6+ */
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(47%,#f6f6f6), color-stop(100%,#ededed)); /* Chrome,Safari4+ 	*/
@@ -352,6 +357,7 @@ fieldset
 }
 */
 
+/*
 legend
 {
     text-align: right;
@@ -367,6 +373,7 @@ legend
     border-bottom: 0px;
     color: #222222;
 }
+*/
 
   
 
