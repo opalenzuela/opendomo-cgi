@@ -37,9 +37,9 @@ ul
 	padding: 0px;
 	width: 100%;
 }
-label input {
-/*	display: none; */
-}
+fieldset ul li label input {display: none;}
+fieldset.multiselect ul li label input {display: inline!important;}
+
 li label {
 	display: inline-block;
 }
@@ -56,12 +56,7 @@ li .imgframe {
 .listbox ul li p , .iconlist ul li p, .selectable ul li p, .wizard ul li p{
 	display: none;
 }
-.iconlist ul li .imgframe, {
-	display: block;
-	width: 32px;
-	height: 32px;
-	border: 1px solid green;
-}
+
 /* Exception: in detailed list, items and details are in a table row */
 .detailed ul {
 	display: table;
@@ -104,11 +99,13 @@ li .imgframe {
 	display: inline-block;
 	margin: 5px;
 	padding: 5px;
-	min-width: 100px;
-	min-height: 100px;
-	max-width: 300px;
-	max-height: 250px;
+	background-position: center;
+	background-size: 100px 100px;
+	height: 100px;
+	width: 100px;
+	overflow: hidden;
 }
+
 /* Exception: in rowforms, the fields are shown in the same row */
 .rowform ul{
 	display: block;	
