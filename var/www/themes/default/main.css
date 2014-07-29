@@ -404,6 +404,7 @@ a.tool {
 	height:32px;
 	width:32px;
 	display: inline-block;
+	color: transparent;
 	border: none;
 	margin: 0px;
 }
