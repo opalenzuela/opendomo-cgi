@@ -105,10 +105,13 @@ li .imgframe {
 	height: 100px;
 	width: 100px;
 	overflow: hidden;
+	border-width: 1px;
+	border-style: solid;
 }
-.iconlist ul li label{
+.iconlist ul li a{
 	width: 100%;
 	height: 100%;
+	display: block;
 }
 
 /* Exception: in rowforms, the fields are shown in the same row */
