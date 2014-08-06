@@ -678,7 +678,6 @@ p {
 }
 .categories .selected a {
 	border-bottom: 4px solid;
-	padding: 10px;	
 }
 
 #main {
@@ -783,9 +782,7 @@ h2 {
 	#cat-tools a ,
 	#cat-map a {
 		padding:0px;
-		display: inline-block;
 		width: 32px;
-		height: 32px;
 		color:transparent;
 		background-position: center center;
 		zoom: 1.2;
@@ -814,6 +811,14 @@ h2 {
 	}
 }
 
+#cat-control a,
+#cat-config a ,
+#cat-tools a ,
+#cat-map a {
+	height: 32px;
+	display: inline-block;		
+}
+	
 #cat-control a {
 	background: url('/images/default/control.png') scroll no-repeat ;
 }
