@@ -245,6 +245,7 @@ a em {
 	padding: 2px;
 }
 
+
 #header
 {
 	padding-top: 20px;
@@ -414,6 +415,7 @@ a.tool {
 	color: transparent;
 	border: none;
 	margin: 0px;
+	vertical-align: top;
 }
 
 #logoutbutton
@@ -775,27 +777,37 @@ h2 {
 }
 
 
-
+@media (max-width:480px) {
+	#cat-control a,
+	#cat-config a ,
+	#cat-tools a ,
+	#cat-map a {
+		padding:0px;
+		display: inline-block;
+		width: 32px;
+	}
+}
+@media only screen and (min-width: 481px) {
+	#cat-control a,
+	#cat-config a ,
+	#cat-tools a ,
+	#cat-map a {
+		padding-left: 32px;
+		padding-right: 32px;	
+	}
+}
 
 #cat-control a {
 	background: url('/images/default/control.png') scroll no-repeat left center;
-	padding-left: 32px;
-	padding-right: 32px;
 }
 #cat-config a {
 	background: url('/images/default/configuracio.png') scroll no-repeat left center;
-	padding-left: 32px;
-	padding-right: 32px;	
 }
 #cat-tools a {
 	background: url('/images/default/eines.png') scroll no-repeat left center;
-	padding-left: 32px;
-	padding-right: 32px;	
 }
 #cat-map a {
 	background: url('/images/default/planell.png') scroll no-repeat left center;
-	padding-left: 32px;
-	padding-right: 32px;	
 }
 
 #list li
