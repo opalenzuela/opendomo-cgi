@@ -775,6 +775,15 @@ h2 {
 
 
 @media (max-width:480px) {
+	body {
+		width:100%;
+		margin: 0px;
+		border:none;
+	}
+	#header
+	{
+		height: 100px;
+	}
 	#cat-control a,
 	#cat-config a ,
 	#cat-tools a ,
@@ -784,9 +793,13 @@ h2 {
 		width: 32px;
 		height: 32px;
 		color:transparent;
+		background-position: center center;
+		zoom: 2;
 	}
 }
 @media only screen and (min-width: 481px) {
+	body {
+	}
 	#header
 	{
 		height: 100px;
@@ -797,20 +810,21 @@ h2 {
 	#cat-map a {
 		padding-left: 32px;
 		padding-right: 32px;	
+		background-position: left center;
 	}
 }
 
 #cat-control a {
-	background: url('/images/default/control.png') scroll no-repeat left center;
+	background: url('/images/default/control.png') scroll no-repeat ;
 }
 #cat-config a {
-	background: url('/images/default/configuracio.png') scroll no-repeat left center;
+	background: url('/images/default/configuracio.png') scroll no-repeat ;
 }
 #cat-tools a {
-	background: url('/images/default/eines.png') scroll no-repeat left center;
+	background: url('/images/default/eines.png') scroll no-repeat ;
 }
 #cat-map a {
-	background: url('/images/default/planell.png') scroll no-repeat left center;
+	background: url('/images/default/planell.png') scroll no-repeat ;
 }
 
 #list li
