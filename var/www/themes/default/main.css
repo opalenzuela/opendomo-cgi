@@ -248,12 +248,9 @@ a em {
 
 #header
 {
-	padding-top: 20px;
-	padding-bottom: 20px;
-	height: 100px;
 	font-weight: bold;
 	background-color: #FFF;
-	background-image: url(/images/default/logo.png);
+	background-image: url(/images/logo.png);
 	background-repeat: no-repeat;
 	border-width: 1px;
 	border-style: solid;
@@ -785,9 +782,15 @@ h2 {
 		padding:0px;
 		display: inline-block;
 		width: 32px;
+		height: 32px;
+		color:transparent;
 	}
 }
 @media only screen and (min-width: 481px) {
+	#header
+	{
+		height: 100px;
+	}
 	#cat-control a,
 	#cat-config a ,
 	#cat-tools a ,
