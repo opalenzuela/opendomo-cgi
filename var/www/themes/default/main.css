@@ -357,6 +357,13 @@ button:hover, .buttonlnk:hover
 	color: white;
 }
 
+li.application {
+	display: block;
+}
+li.application>iframe {
+	height: 250px;
+}
+
 input[type=text], 
 input[type=readonly], 
 input[type=datetime], 
