@@ -64,12 +64,15 @@ li .imgframe {
 .detailed ul li {
 	display: table-row;
 }
-.detailed ul li label {
+.detailed ul li a {
 	display: table-cell;	
+	width: 50%;
+	padding-left: 5px;
 }
 .detailed ul li p{
 	display: table-cell;
 	vertical-align: middle;	
+	width: 50%;
 }
 /*.selectable ul li label input {
 	display: inline!important;
@@ -82,10 +85,9 @@ li .imgframe {
 	display: table-row;
 	min-height: 35px;
 }
-.tabform ul li label {
+.tabform ul li a {
 	display: table-cell;
 	vertical-align: middle;
-/*	width: 50%; */
 }
 .tabform ul li p{
 	display: table-cell;
@@ -362,6 +364,7 @@ li.application {
 }
 li.application>iframe {
 	height: 250px;
+	width: 100%;
 }
 
 input[type=text], 
