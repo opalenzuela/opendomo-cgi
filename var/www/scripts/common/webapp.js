@@ -1,4 +1,5 @@
-if(("standalone" in window.navigator) && window.navigator.standalone){
+$(function(){
+//if(("standalone" in window.navigator) && window.navigator.standalone){
 	var noddy, remotes = false;
 	document.addEventListener('click', function(event) {
 		noddy = event.target;
@@ -12,4 +13,5 @@ if(("standalone" in window.navigator) && window.navigator.standalone){
 			document.location.href = noddy.href;
 		}
 	},false);
-}
+//}
+});
