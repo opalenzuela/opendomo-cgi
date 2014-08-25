@@ -1,7 +1,8 @@
-$(function(){
+//$(function(){
 //if(("standalone" in window.navigator) && window.navigator.standalone){
 	var noddy, remotes = false;
-	document.addEventListener('click', function(event) {
+	document.addEventListener('click touch', function(event) {
+		console.log("Handeling click event", event);
 		noddy = event.target;
 		while(noddy.nodeName !== "A" && noddy.nodeName !== "HTML") {
 			noddy = noddy.parentNode;
@@ -14,4 +15,4 @@ $(function(){
 		}
 	},false);
 //}
-});
+//});
