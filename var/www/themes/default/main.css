@@ -30,15 +30,11 @@ h2[id*='_lgnd_h2'], #logo_od,.tabberactive, .tabbernav
 
 /* LISTS AND FORMS
  * General case: tabulated, hiding icon and details
- */
-ul
-{  
-	list-style-type:none; 
-	padding: 0px;
-	width: 100%;
-}
+ 
+
 fieldset ul li label input , fieldset ul li b input {display: none;}
 fieldset.multiselect ul li label input, fieldset.multiselect ul li b input {display: inline!important;}
+*/
 
 li label {
 	display: inline-block;
@@ -46,38 +42,33 @@ li label {
 li .imgframe {
 	display: none;
 }
-.listbox ul, .detailed  ul, .tabform ul, {
-	list-style-type:none;
+.listbox ul, .detailed  ul, .tabform ul {
+	list-style-type:none; 
 	padding: 0px;
-	display: table;	
+	width: 100%;
+	display: table;
 }
 .listbox ul li, .detailed ul li, .selectable ul li {
-	display: block;
+	display: table-row;
 	height: 35px;
 	width: 100%;
+	vertical-align: middle;
 }
 .listbox ul li a, .selectable ul li a  {
 	display: table-cell;	
 	padding-left: 5px;
 	vertical-align: middle;
 	width: 100%;
+	vertical-align: middle;
 }
 .listbox ul li p , .iconlist ul li p, .selectable ul li p, .wizard ul li p{
 	display: none;
 }
 
 /* Exception: in detailed list, items and details are in a table row */
-.detailed ul {
-	display: table;
-}
-.detailed ul li {
-	display: table-row;
-}
 .detailed ul li a {
 	display: table-cell;	
 	width: 50%;
-	padding-left: 5px;
-	vertical-align: middle;
 }
 .detailed ul li p{
 	display: table-cell;
