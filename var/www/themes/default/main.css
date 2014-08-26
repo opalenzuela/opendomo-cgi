@@ -119,7 +119,7 @@ li .imgframe {
 	border-style: solid;
 	border-radius: 10px;
 	height: 120px;
-	width: 100px;
+	width: 120px;
 	overflow: hidden;
 	white-space: nowrap;
 	text-align: center;
@@ -523,7 +523,7 @@ legend
 }
 
 .wizard ul{
-	margin: 40px 10px 40px 200px;
+/*	margin: 40px 10px 40px 200px; */
 	display: block;
 	width: auto!important;
 	height: 250px;

@@ -47,7 +47,9 @@ h2 {
 	color: #F66;
 	background-color: #DFDFDF;
 }
-
+.iconlist ul li  {
+	border-color: #ddd;
+}
 
 
 .root, .applicationTitle{

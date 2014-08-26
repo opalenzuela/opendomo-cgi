@@ -59,6 +59,18 @@ echo "actions:"
 echo "	goback	Back"
 echo
 
+echo "#>Filterable detailed list"
+echo "list:$S	detailed filterable"
+for i in Seat Wolkswagen Audi Mazda Porsche Fiat Ferrari Skoda
+do
+	echo "	$i	$i	item	$i"
+done
+echo "actions:"
+echo "	goback	Back"
+echo
+
+
+
 echo "#>Data form"
 echo "form:$S"
 echo "	none1	Separator1	separator"
