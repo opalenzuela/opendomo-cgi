@@ -60,7 +60,7 @@ $(function() {
 
 function updatetimers () {
 	if (focusitem == null || timetouch == 0) return;
-	console.log("Pressing on ", focusitem);
+	//console.log("Pressing on ", focusitem);
 	var timetouch2 = new Date().getTime();
 	var milliseconds = timetouch2 - timetouch;
 	if (milliseconds > 1000) {

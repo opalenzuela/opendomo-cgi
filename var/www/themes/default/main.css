@@ -52,7 +52,7 @@ li .imgframe {
 	display: table;	
 }
 .listbox ul li, .detailed ul li, .selectable ul li {
-	display: table-row;
+	display: block;
 	height: 35px;
 	width: 100%;
 }
@@ -114,6 +114,10 @@ li .imgframe {
 	background-position: center top;
 	background-size: 100px 100px;
 	background-repeat: no-repeat;
+	background-image: url("/images/default/pdtbg.png");
+	border-width: 2px;
+	border-style: solid;
+	border-radius: 10px;
 	height: 120px;
 	width: 100px;
 	overflow: hidden;
@@ -889,7 +893,6 @@ h2 {
 	font-weight: 600;
 	vertical-align: middle; 
 	height: 40px;
-	padding-left: 10px;
 	background:#E1E1E1 url(/images/default/frametoolbartop_bg.png) repeat-x 50% 0;
     line-height: 3em;
 	text-indent: 10px;
