@@ -844,6 +844,10 @@ h2 {
 	}
 }
 @media only screen and (min-device-width: 1025px) {
+	input.filterbox {
+		border: none;
+		float: right;
+	}
 	body {
 		padding: 2px;
 		width: 80%;
