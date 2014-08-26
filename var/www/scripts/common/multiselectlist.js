@@ -23,8 +23,10 @@ $(function() {
 			console.log("Long pressed on ", focusitem);
 			if (focusitem.hasClass("selected")){
 				focusitem.removeClass("selected");	
+				$(this).find("input")[0].checked = false;
 			} else {
 				focusitem.addClass("selected");
+				$(this).find("input")[0].checked = true;
 			}
 			focusitem = null;
 			timetouch = 0;
@@ -36,7 +38,7 @@ $(function() {
 	$("fieldset.selectable li").on("mouseup touchend", function(event) {
 		timetouch = 0;
 		if (milliseconds<1000 && focusitem != null) {
-			var url = $(this).data("target");
+			var url = $(this).find("a").data("target");
 			if (url) {
 				console.log("navigating to " + url);
 				document.location = url;

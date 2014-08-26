@@ -976,6 +976,7 @@ select option[disabled]
 
 fieldset.iconlist li.selected {
 	border: 2px solid gray!important;
+	border-radius: 10px;
 }
 fieldset li.selected {
 	background-color: #ddd!important;
