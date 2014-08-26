@@ -46,7 +46,7 @@ li label {
 li .imgframe {
 	display: none;
 }
-.listbox ul, .detailedlist ul, .tabform ul, {
+.listbox ul, .detailed  ul, .tabform ul, {
 	list-style-type:none;
 	padding: 0px;
 	display: table;	
@@ -54,11 +54,13 @@ li .imgframe {
 .listbox ul li, .detailed ul li, .selectable ul li {
 	display: table-row;
 	height: 35px;
+	width: 100%;
 }
-.listbox ul li a {
+.listbox ul li a, .selectable ul li a  {
 	display: table-cell;	
 	padding-left: 5px;
 	vertical-align: middle;
+	width: 100%;
 }
 .listbox ul li p , .iconlist ul li p, .selectable ul li p, .wizard ul li p{
 	display: none;
