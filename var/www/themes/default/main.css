@@ -972,3 +972,11 @@ select option[disabled]
 {
 	background-color:gray;
 }
+
+
+fieldset.iconlist li.selected {
+	border: 2px solid gray!important;
+}
+fieldset li.selected {
+	background-color: #ddd!important;
+}

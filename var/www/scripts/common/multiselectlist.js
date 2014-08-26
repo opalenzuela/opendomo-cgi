@@ -2,19 +2,46 @@
 
 var timetouch = 0;
 var focusitem = null;
+var milliseconds = 0;
+
 $(function() {
 	$("fieldset.selectable li").on("mousedown touchstart", function(event) {
 		var url = $(this).find("a").attr("href") ;
 		$(this).find("a")
-			.attr("href","javascript:void()")
+			.attr("href","javascript:void(0)")
 			.data("target",url);	
 			
 		focusitem = $(this);
 		timetouch = new Date().getTime();
-		console.log("Pressing on " , $(this));
+		//console.log("Pressing on " , $(this));
 		event.preventDefault();
-		event.stopPropagation();			
+		event.stopPropagation();
+		
+		var timetouch2 = new Date().getTime();
+		milliseconds = timetouch2 - timetouch;
+		if (milliseconds > 1000) {
+			console.log("Long pressed on ", focusitem);
+			if (focusitem.hasClass("selected")){
+				focusitem.removeClass("selected");	
+			} else {
+				focusitem.addClass("selected");
+			}
+			focusitem = null;
+			timetouch = 0;
+		} else {
+			console.log("Short press still");
+		}		
 	});
+	
+	$("fieldset.selectable li").on("mouseup touchend", function(event) {
+		focusitem = null;
+		timetouch = 0;
+		if (milliseconds<1000) {
+			var url = $(this).data("target");
+			console.log("navigating to " + url);
+			document.location = url;
+		}
+	});	
 	/*$("fieldset.selectable li").each(function(index){
 		var url = $(this).find("a").attr("href") ;
 		$(this).find("a")
@@ -62,6 +89,6 @@ function updatetimers () {
 		console.log("Short press still");
 	}
 }
-setTimeout(updatetimers,100);
+setInterval(updatetimers,100);
 
 
