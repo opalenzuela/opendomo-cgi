@@ -1,4 +1,4 @@
-//include_script("/scripts/jquery.longpress.js");
+include_script("/scripts/jquery.longpress.js");
 
 var timetouch;
 $(function() {
