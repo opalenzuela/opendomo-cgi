@@ -37,10 +37,8 @@ $(function() {
 	}); */
 });
 
-setTimeout(updateLongpress,100);
-
-function updateLongpress() {
-	if (focusitem == null) return false;
+setTimeout(function () {
+	if (focusitem == null || timetouch == 0) return false;
 	console.log("Pressing on ", focusitem);
 	var timetouch2 = new Date().getTime();
 	var milliseconds = timetouch2 - timetouch;
@@ -52,6 +50,9 @@ function updateLongpress() {
 			focusitem.addClass("selected");
 		}
 		focusitem = null;
+		timetouch = 0;
 	}
 }
+,100);
+
 
