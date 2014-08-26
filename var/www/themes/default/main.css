@@ -817,7 +817,29 @@ h2 {
 		zoom: 1.2;
 	}
 }
-@media only screen and (min-width: 481px) {
+@media all and (orientation:portrait) {
+	body {
+		width:100%;
+		margin: 0px;
+		border:none;
+	}
+	#header
+	{
+		height: 100px;
+	}
+}
+@media all and (orientation:landscape) {
+	body {
+		width:100%;
+		margin: 0px;
+		border:none;
+	}
+	#header
+	{
+		height: 100px;
+	}
+}
+@media only screen and (min-device-width: 1025px) {
 	body {
 		padding: 2px;
 		width: 80%;
