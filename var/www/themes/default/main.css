@@ -799,8 +799,19 @@ h2 {
 	color: #F00;
 }
 
+input.filterbox {
+    border: medium none;
+    margin: 2px;
+    padding: 10px 2px;
+	background: url("/images/filter.png") no-repeat left center;
+}
+
 
 @media (max-width:480px) {
+	input.filterbox {
+		width: 100%;
+		margin: 0px;
+	}
 	body {
 		width:100%;
 		margin: 0px;
@@ -822,6 +833,10 @@ h2 {
 	}
 }
 @media all and (orientation:portrait) {
+	input.filterbox {
+		width: 100%;
+		margin: 0px;
+	}
 	body {
 		width:100%;
 		margin: 0px;
@@ -833,6 +848,9 @@ h2 {
 	}
 }
 @media all and (orientation:landscape) {
+	input.filterbox {
+		float: right;
+	}
 	body {
 		width:100%;
 		margin: 0px;
@@ -845,7 +863,6 @@ h2 {
 }
 @media only screen and (min-device-width: 1025px) {
 	input.filterbox {
-		border: none;
 		float: right;
 	}
 	body {
