@@ -3,17 +3,18 @@ include_script("/scripts/jquery.longpress.js");
 var timetouch;
 var focusitem = null;
 $(function() {
-	$("fieldset.selectable").each(function(index){
+	$("fieldset.selectable li").on("mousedown touchstart", function(event) {
+		focusitem = $(this);
+		timetouch = new Date().getTime();
+		console.log("Pressing on " , $(this));
+	});
+	/*$("fieldset.selectable li").each(function(index){
 		var url = $(this).find("a").attr("href") ;
 		$(this).find("a")
 			.attr("href","javascript:void()")
 			.data("target",url);
-		$(this).find("li").on("mousedown touchstart", function(event) {
-			focusitem = $(this);
-			timetouch = new Date().getTime();
-			console.log("Pressing on " , $(this));
-		});
-		/*$(this).find("li").on("mouseup touchend", function(event) {
+
+		$(this).find("li").on("mouseup touchend", function(event) {
 			event.preventDefault();
 			event.stopPropagation();			
 			
@@ -32,17 +33,19 @@ $(function() {
 					$(this).addClass("selected");
 				}
 			}
-		});	*/	
-	});
+		});	
+	}); */
 });
 
 setTimeout(updateLongpress,100);
 
 function updateLongpress() {
 	if (focusitem == null) return false;
+	console.log("Pressing on ", focusitem);
 	var timetouch2 = new Date().getTime();
 	var milliseconds = timetouch2 - timetouch;
 	if (milliseconds>1000) {
+		console.log("Long pressed on ", focusitem);
 		if (focusitem.hasClass("selected")){
 			focusitem.removeClass("selected");	
 		} else {
