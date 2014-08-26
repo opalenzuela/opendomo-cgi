@@ -67,10 +67,12 @@ function updatetimers () {
 		console.log("Long pressed on ", focusitem);
 		if (focusitem.hasClass("selected")){
 			focusitem.removeClass("selected");	
-			$(this).find("input")[0].checked = false;
+			focusitem.find("input")[0].checked = false;
+			console.log("Unselecting")
 		} else {
 			focusitem.addClass("selected");
-			$(this).find("input")[0].checked = true;
+			focusitem.find("input")[0].checked = true;
+			console.log("Selecting")
 		}
 		focusitem = null;
 		timetouch = 0;
