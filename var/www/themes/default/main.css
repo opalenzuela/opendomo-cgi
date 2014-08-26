@@ -523,7 +523,7 @@ legend
 }
 
 .wizard ul{
-/*	margin: 40px 10px 40px 200px; */
+	margin: 40px 10px 40px 200px; 
 	display: block;
 	width: auto!important;
 	height: 250px;
@@ -802,8 +802,10 @@ h2 {
 input.filterbox {
     border: medium none;
     margin: 2px;
-    padding: 10px 2px;
-	background: url("/images/filter.png") no-repeat left center;
+    padding: 2px 0px;
+	background: url('/images/filter.png') no-repeat scroll 3px 4px transparent;
+	text-indent: 20px;
+	height: 20px;	
 }
 
 
