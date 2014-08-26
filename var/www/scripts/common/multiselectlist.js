@@ -1,12 +1,19 @@
-include_script("/scripts/jquery.longpress.js");
+//include_script("/scripts/jquery.longpress.js");
 
-var timetouch;
+var timetouch = 0;
 var focusitem = null;
 $(function() {
 	$("fieldset.selectable li").on("mousedown touchstart", function(event) {
+		var url = $(this).find("a").attr("href") ;
+		$(this).find("a")
+			.attr("href","javascript:void()")
+			.data("target",url);	
+			
 		focusitem = $(this);
 		timetouch = new Date().getTime();
 		console.log("Pressing on " , $(this));
+		event.preventDefault();
+		event.stopPropagation();			
 	});
 	/*$("fieldset.selectable li").each(function(index){
 		var url = $(this).find("a").attr("href") ;
@@ -37,12 +44,12 @@ $(function() {
 	}); */
 });
 
-setTimeout(function () {
-	if (focusitem == null || timetouch == 0) return false;
+function updatetimers () {
+	if (focusitem == null || timetouch == 0) return;
 	console.log("Pressing on ", focusitem);
 	var timetouch2 = new Date().getTime();
 	var milliseconds = timetouch2 - timetouch;
-	if (milliseconds>1000) {
+	if (milliseconds > 1000) {
 		console.log("Long pressed on ", focusitem);
 		if (focusitem.hasClass("selected")){
 			focusitem.removeClass("selected");	
@@ -51,8 +58,10 @@ setTimeout(function () {
 		}
 		focusitem = null;
 		timetouch = 0;
+	} else {
+		console.log("Short press still");
 	}
 }
-,100);
+setTimeout(updatetimers,100);
 
 
