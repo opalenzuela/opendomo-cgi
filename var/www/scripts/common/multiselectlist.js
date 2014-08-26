@@ -16,23 +16,6 @@ $(function() {
 		//console.log("Pressing on " , $(this));
 		event.preventDefault();
 		event.stopPropagation();
-		
-		var timetouch2 = new Date().getTime();
-		milliseconds = timetouch2 - timetouch;
-		if (milliseconds > 1000) {
-			console.log("Long pressed on ", focusitem);
-			if (focusitem.hasClass("selected")){
-				focusitem.removeClass("selected");	
-				$(this).find("input")[0].checked = false;
-			} else {
-				focusitem.addClass("selected");
-				$(this).find("input")[0].checked = true;
-			}
-			focusitem = null;
-			timetouch = 0;
-		} else {
-			console.log("Short press still");
-		}		
 	});
 	
 	$("fieldset.selectable li").on("mouseup touchend", function(event) {
@@ -84,8 +67,10 @@ function updatetimers () {
 		console.log("Long pressed on ", focusitem);
 		if (focusitem.hasClass("selected")){
 			focusitem.removeClass("selected");	
+			$(this).find("input")[0].checked = false;
 		} else {
 			focusitem.addClass("selected");
+			$(this).find("input")[0].checked = true;
 		}
 		focusitem = null;
 		timetouch = 0;
