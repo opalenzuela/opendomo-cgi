@@ -34,13 +34,15 @@ $(function() {
 	});
 	
 	$("fieldset.selectable li").on("mouseup touchend", function(event) {
-		focusitem = null;
 		timetouch = 0;
-		if (milliseconds<1000) {
+		if (milliseconds<1000 && focusitem != null) {
 			var url = $(this).data("target");
-			console.log("navigating to " + url);
-			document.location = url;
+			if (url) {
+				console.log("navigating to " + url);
+				document.location = url;
+			}
 		}
+		focusitem = null;		
 	});	
 	/*$("fieldset.selectable li").each(function(index){
 		var url = $(this).find("a").attr("href") ;
