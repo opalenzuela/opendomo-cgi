@@ -36,13 +36,17 @@ fieldset ul li label input , fieldset ul li b input {display: none;}
 fieldset.multiselect ul li label input, fieldset.multiselect ul li b input {display: inline!important;}
 */
 
+fieldset input[type=checkbox] {
+	display: none!important;
+}
+
 li label {
 	display: inline-block;
 }
 li .imgframe {
 	display: none;
 }
-.listbox ul, .detailed  ul, .tabform ul {
+.listbox ul, .detailed  ul, .tabform ul , .selectable ul{
 	list-style-type:none; 
 	padding: 0px;
 	width: 100%;
