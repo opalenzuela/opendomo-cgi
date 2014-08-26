@@ -49,9 +49,16 @@ li .imgframe {
 .listbox ul, .detailedlist ul, .tabform ul, {
 	list-style-type:none;
 	padding: 0px;
+	display: table;	
 }
 .listbox ul li, .detailed ul li, .selectable ul li {
+	display: table-row;
 	height: 35px;
+}
+.listbox ul li a {
+	display: table-cell;	
+	padding-left: 5px;
+	vertical-align: middle;
 }
 .listbox ul li p , .iconlist ul li p, .selectable ul li p, .wizard ul li p{
 	display: none;
