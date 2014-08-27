@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-import cgi, os, sys, pathlib
+import cgi, os, sys
 import cgitb; cgitb.enable()
 
 try: # Windows needs stdio set for binary mode.
@@ -24,9 +24,8 @@ if "fname" not in form:
 	sys.exit()
 
 message = form["fname"].value
-	
-p = pathlib.Path('path/to/file')
-if p.exists():
+try: 
+	f = open(message, 'r')
 	overwrite = 'Overwrite'
 
 else:
