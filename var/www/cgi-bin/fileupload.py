@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-import cgi, os
+import cgi, os, sys, pathlib
 import cgitb; cgitb.enable()
 
 try: # Windows needs stdio set for binary mode.
@@ -9,28 +9,41 @@ try: # Windows needs stdio set for binary mode.
 except ImportError:
     pass
 
+
 form = cgi.FieldStorage()
 
 if "fname" not in form:
 	message = 'Invalid format'
 	print """\
 	Content-Type: text/html\n
-	<html><body>
+	<html><head><link rel='stylesheet' type='text/css' href='/css/fileupload.css' /></head>
+	<body>
 	<h2>%s</h2>
 	</body></html>
 	""" % (message,)
+	sys.exit()
 
 message = form["fname"].value
+	
+p = pathlib.Path('path/to/file')
+if p.exists():
+	overwrite = 'Overwrite'
+
+else:
+	overwrite = 'Send file'
 	
 if "file" not in form:
 	print """\
 	Content-Type: text/html\n
-	<html><body>
+	<html><head><link rel='stylesheet' type='text/css' href='/css/fileupload.css' /></head>
+	<body>
+	<form enctype='multipart/form-data' actione='fileupload.py' method='post'>
 	<input name='file' type='file'>
-	<input name='fname' type='hidden' value='%s'></p>
+	<input name='fname' type='hidden' value='%s'>
+	<input type='submit' value='%s'></p>
 	</body></html>
-	""" % (message,)
-    return
+	""" % (message,overwrite)
+	sys.exit()
 
 # Generator to buffer file chunks
 def fbuffer(f, chunk_size=10000):
@@ -61,7 +74,8 @@ else:
    
 print """\
 Content-Type: text/html\n
-<html><body>
+<html><head><link rel='stylesheet' type='text/css' href='/css/fileupload.css' /></head>
+<body>
 <p>%s</p>
 </body></html>
 """ % (message,)
