@@ -3,12 +3,13 @@
 #desc:Configure interface
 #type:local
 
-# Copyright(c) 2011 OpenDomo Services SL. Licensed under GPL v3 or later
+# Copyright(c) 2014 OpenDomo Services SL. Licensed under GPL v3 or later
 
 SKINFILE="/etc/opendomo/cgi_skin"
 CFGFILE="/etc/opendomo/cgi_style"
 I18N_PATH="/var/opendomo/i18n"
 CFG_PATH="/etc/opendomo/i18n"
+URLTRANS="http://cloud.opendomo.com/babel/trans.php"
 
 
 # ====== SAVE CONFIG IF ARGS PASSED ==========
@@ -83,7 +84,6 @@ for i in /var/www/themes/*; do
 done
 
 if ! test -f /etc/opendomo/langfiles/available; then
-	URLTRANS="http://cloud.opendomo.com/babel/trans.php"
 	wget -q "$URLTRANS?lang=all" -O /etc/opendomo/langfiles/available
 fi
 if test -f /etc/opendomo/langfiles/available; then
