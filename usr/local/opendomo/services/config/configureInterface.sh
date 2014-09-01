@@ -83,10 +83,11 @@ for i in /var/www/themes/*; do
 done
 
 if ! test -f /etc/opendomo/langfiles/available; then
-	wget -q "http://www.opendomo.org/trans.php?lang=all" -O /etc/opendomo/langfiles/available
+	URLTRANS="http://cloud.opendomo.com/babel/trans.php"
+	wget -q "$URLTRANS?lang=all" -O /etc/opendomo/langfiles/available
 fi
 if test -f /etc/opendomo/langfiles/available; then
-	LANG_LIST=`cat /etc/opendomo/langfiles/available`
+	LANG_LIST=`tail -n1 /etc/opendomo/langfiles/available`
 fi
 
 echo "#>Configure interface"
