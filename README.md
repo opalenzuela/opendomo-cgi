@@ -1,7 +1,9 @@
-Web interface for OpenDomo
-==========================
+Web interface extensions for OpenDomoOS
+=======================================
 
-OpenDomo-CGI (a.k.a odcgi) is the main interface for [OpenDomoOS](http://www.opendomo.com) and it's bundled within the Operative System. However, this project intends to upgrade and eventually replace it with a plug-in, to offer the following advantages:
+This plugin is an extension of the the main interface for [OpenDomoOS](http://www.opendomo.com).  
+While odcgi is bundled within the Operative System, this project will eventually replace it with
+a plug-in, to offer the following advantages:
 
 * **Avoid compilation** and replace the current binary with a Python script. Quick deployment, easy modification.
 * **Good-by, cross-dependencies!** Too many libraries required, source code, for a simple executable.
