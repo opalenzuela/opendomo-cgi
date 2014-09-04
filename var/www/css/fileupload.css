@@ -4,6 +4,7 @@ form {
 body {
 	margin: 0px;
 	height: 24px;
+	font: 13px/20px "Droid Sans",Arial,"Helvetica Neue","Lucida Grande",sans-serif;
 }
 h1,h2,h3 {
 	font-size: 1em;
@@ -20,4 +21,5 @@ div.filecontainer {
 	padding: 1px 5px 2px 5px;
 	min-width: 100px;
 	text-align: center;
+	display: inline-block;
 }

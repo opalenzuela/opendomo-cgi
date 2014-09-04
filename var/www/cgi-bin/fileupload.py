@@ -70,7 +70,7 @@ if fileitem.filename:
    for chunk in fbuffer(fileitem.file):
       f.write(chunk)
    f.close()
-   message = 'The file "' + fn + '" was uploaded successfully'
+   message = 'File uploaded successfully'
 
 else:
    message = 'No file was uploaded'
@@ -79,6 +79,6 @@ print """\
 Content-Type: text/html\n
 <html><head><link rel='stylesheet' type='text/css' href='/css/fileupload.css' /></head>
 <body>
-<p>%s</p>
+<form><div class='filecontainer'>%s</div></form>
 </body></html>
 """ % (message,)
