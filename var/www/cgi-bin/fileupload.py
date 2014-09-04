@@ -23,9 +23,9 @@ if "fname" not in form:
 	""" % (message,)
 	sys.exit()
 else:
-	message = form["fname"]
+	filename = form.getvalue("fname")
 	try: 
-		f = open(message, 'r')
+		f = open(filename, 'r')
 		overwrite = 'Overwrite'
 
 	except IOError:
