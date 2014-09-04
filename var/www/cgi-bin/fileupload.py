@@ -25,7 +25,8 @@ if "fname" not in form:
 else:
 	filename = form.getvalue("fname")
 	try: 
-		f = open(filename, 'r')
+		fn = '/var/opendomo/tmp/' + os.path.basename(filename)
+		f = open(fn, 'r')
 		overwrite = 'Overwrite'
 
 	except IOError:
@@ -37,12 +38,12 @@ if "file" not in form:
 	Content-Type: text/html\n
 	<html><head><link rel='stylesheet' type='text/css' href='/css/fileupload.css' /></head>
 	<body>
-	<form enctype='multipart/form-data' actione='fileupload.py' method='post'>
+	<form enctype='multipart/form-data' action='fileupload.py' method='post'>
 	<input name='file' type='file'>
 	<input name='fname' type='hidden' value='%s'>
 	<input type='submit' value='%s'></p>
 	</body></html>
-	""" % (message,overwrite)
+	""" % (filename,overwrite)
 	sys.exit()
 
 # Generator to buffer file chunks
@@ -59,7 +60,7 @@ fileitem = form['file']
 if fileitem.filename:
 
    # strip leading path from file name to avoid directory traversal attacks
-   fn = '/var/opendomo/tmp/' + os.path.basename(message)
+   fn = '/var/opendomo/tmp/' + os.path.basename(filename)
    
    f = open(fn, 'wb', 10000)
 
