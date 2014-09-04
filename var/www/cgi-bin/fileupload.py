@@ -22,14 +22,15 @@ if "fname" not in form:
 	</body></html>
 	""" % (message,)
 	sys.exit()
+else:
+	message = form["fname"]
+	try: 
+		f = open(message, 'r')
+		overwrite = 'Overwrite'
 
-message = form["fname"]
-try: 
-	f = open(message, 'r')
-	overwrite = 'Overwrite'
+	except IOError:
+		overwrite = 'Send file'
 
-except IOError:
-	overwrite = 'Send file'
 	
 if "file" not in form:
 	print """\
