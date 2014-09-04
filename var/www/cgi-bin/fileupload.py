@@ -28,9 +28,11 @@ else:
 		fn = '/var/opendomo/tmp/' + os.path.basename(filename)
 		f = open(fn, 'r')
 		overwrite = 'Overwrite'
+		overwriteclass = 'fileexists'
 
 	except IOError:
 		overwrite = 'Send file'
+		overwriteclass = 'newfile'
 
 	
 if "file" not in form:
@@ -38,12 +40,12 @@ if "file" not in form:
 	Content-Type: text/html\n
 	<html><head><link rel='stylesheet' type='text/css' href='/css/fileupload.css' /></head>
 	<body>
-	<form enctype='multipart/form-data' action='fileupload.py' method='post'>
-	<input name='file' type='file'>
+	<form enctype='multipart/form-data' action='fileupload.py' method='post' class='%s'>
+	<label><input name='file' type='file'><div class='filecontainer'>%s</div></labe>
 	<input name='fname' type='hidden' value='%s'>
-	<input type='submit' value='%s'></p>
+	<input type='submit'></p>
 	</body></html>
-	""" % (filename,overwrite)
+	""" % (overwriteclass,overwrite,filename)
 	sys.exit()
 
 # Generator to buffer file chunks
