@@ -23,7 +23,7 @@ if "fname" not in form:
 	""" % (message,)
 	sys.exit()
 
-message = form["fname"].value
+message = form["fname"]
 try: 
 	f = open(message, 'r')
 	overwrite = 'Overwrite'
