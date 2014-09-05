@@ -9,6 +9,10 @@ try: # Windows needs stdio set for binary mode.
 except ImportError:
     pass
 
+# This directory is only needed for this particular feature. 
+# So, if it does not exists, we create it.
+if not os.path.exists("/var/opendomo/tmp/lighttpd/upload"):
+    os.makedirs("/var/opendomo/tmp/lighttpd/upload")
 
 form = cgi.FieldStorage()
 
