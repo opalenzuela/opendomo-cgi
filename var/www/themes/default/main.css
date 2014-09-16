@@ -847,6 +847,14 @@ input.filterbox {
 	{
 		height: 100px;
 	}
+	#cat-control a,
+	#cat-config a ,
+	#cat-tools a ,
+	#cat-map a {
+		padding-left: 32px;
+		padding-right: 32px;	
+		background-position: left center;
+	}	
 }
 @media all and (orientation:landscape) {
 	input.filterbox {
@@ -861,6 +869,14 @@ input.filterbox {
 	{
 		height: 100px;
 	}
+	#cat-control a,
+	#cat-config a ,
+	#cat-tools a ,
+	#cat-map a {
+		padding-left: 32px;
+		padding-right: 32px;	
+		background-position: left center;
+	}	
 }
 @media only screen and (min-device-width: 1025px) {
 	input.filterbox {
