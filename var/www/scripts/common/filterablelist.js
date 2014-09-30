@@ -1,18 +1,20 @@
 $(function() {
 	$("fieldset.filterable ul").each(function(item) {
-		var rawhtml = "<input name='filter' placeholder='Filter text' class='filterbox' data-reference='" + $(this).attr('id') + "'  id='" + $(this).attr('id') + "_filter' type='search'>";
+		var rawhtml = "<input placeholder='Filter text' class='filterbox' data-reference='" + $(this).attr('id') + "'  id='" + $(this).attr('id') + "_filter' type='search'>";
 		$(rawhtml).insertBefore($(this));
 	});
 	$("fieldset.filterable input.filterbox").on("change",function() {
 		var ref = $(this).data("reference");
 		filterList(ref, $(this).val());
 	});
+	/*
 	$("fieldset.filterable input.filterbox").on("click",function() {
 		$(this).prop("disabled",false);
 	});	
 	$("fieldset.filterable input.filterbox").on("blur",function() {
 		$(this).prop("disabled",true); // We must disable, so contents are not sent as data
 	});		
+	*/
 });
 
 /**
