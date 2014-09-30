@@ -1,6 +1,6 @@
 #!/bin/sh
 #desc:Test interface
-#package:odcgi
+#package:cgiextra
 #type:local
 
 # This script contains all the possible blocks used in the CGI.
@@ -9,7 +9,7 @@
 
 S=`basename $0`
 
-echo "#INFO Parameters received: $1 $2 $3"
+echo "#INFO Parameters received: $@"
 
 echo "#>Normal passive list"
 echo "list:$S"
