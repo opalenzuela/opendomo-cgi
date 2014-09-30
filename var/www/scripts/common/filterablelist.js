@@ -7,6 +7,12 @@ $(function() {
 		var ref = $(this).data("reference");
 		filterList(ref, $(this).val());
 	});
+	$("fieldset.filterable input.filterbox").on("click",function() {
+		$(this).prop("disable",false);
+	});	
+	$("fieldset.filterable input.filterbox").on("blur",function() {
+		$(this).prop("disable",true); // We must disable, so contents are not sent as data
+	});		
 });
 
 /**
