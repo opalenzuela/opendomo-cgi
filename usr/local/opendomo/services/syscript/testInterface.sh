@@ -72,7 +72,7 @@ echo
 
 
 echo "#>Data form"
-echo "form:$S"
+echo "form:$S	filterable"
 echo "	none1	Separator1	separator"
 echo "	passw	Password	password"
 echo "	reado	Readonly field	readonly	Field value"
