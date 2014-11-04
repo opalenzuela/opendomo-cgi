@@ -800,7 +800,7 @@ h2 {
 }
 
 
-
+/*
 
 #setSystemState
 {
@@ -816,7 +816,7 @@ h2 {
 	height: 40px;
 	padding-left: 10px;
 
-/*	min-height: 70px;
+	min-height: 70px;
 	border: 1px solid #cccccc;
 	border-bottom-left-radius: 10px;
 	border-top-right-radius: 10px;
@@ -827,23 +827,15 @@ h2 {
 	margin:10px;
 	padding:25px;
 	border:1px solid #CCCCCC;
-	float:left; */
+	float:left; 
 } 
-/* Ocultamos el marco del frameset, leyenda y el checkbox */
-.listbox ul li label input[type=checkbox] {
+
+*/
+/* Ocultamos el checkbox */
+input[type=checkbox] {
 	display:none;
 }
 
-.listbox #manageCameras, .listbox #camZonesConf{
-	font-size: 16px;
-	font-weight: 600;
-}
-
-.listbox #manageCameras a, .listbox #camZonesConf a{
-	background: url('/images/default/cam.png') scroll no-repeat left center;
-	padding-left: 32px;
-	padding-right: 32px;	
-}
 
 .listbox #list a{
 	background: url('/images/default/circle.png') scroll no-repeat left center;
