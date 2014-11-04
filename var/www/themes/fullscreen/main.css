@@ -890,3 +890,101 @@ select option[disabled]
 {
 	background-color:gray;
 }
+
+
+
+@media (max-width:480px) {
+	input.filterbox {
+		width: 100%;
+		margin: 0px;
+	}
+	body {
+		width:100%;
+		margin: 0px;
+		border:none;
+	}
+	#header
+	{
+		height: 100px;
+	}
+	#cat-control a,
+	#cat-config a ,
+	#cat-tools a ,
+	#cat-map a {
+		padding:0px;
+		width: 32px;
+		color:transparent;
+		padding-left: 0px;
+		padding-right: 0px;		
+		background-position: center center;
+		zoom: 1.2;
+	}
+}
+@media all and (orientation:portrait) {
+	input.filterbox {
+		width: 100%;
+		margin: 0px;
+	}
+	body {
+		width:100%;
+		margin: 0px;
+		border:none;
+	}
+	#header
+	{
+		height: 100px;
+	}
+	#cat-control a,
+	#cat-config a ,
+	#cat-tools a ,
+	#cat-map a {
+		background-position: center center;
+	}	
+}
+@media all and (orientation:landscape) {
+	input.filterbox {
+		float: right;
+	}
+	body {
+		width:100%;
+		margin: 0px;
+		border:none;
+	}
+	#header
+	{
+		height: 100px;
+	}
+	#cat-control a,
+	#cat-config a ,
+	#cat-tools a ,
+	#cat-map a {
+		padding-left: 32px;
+		padding-right: 32px;	
+		background-position: left center;
+	}	
+}
+@media only screen and (min-width: 481px) {
+	input.filterbox {
+		float: right;
+	}
+	body {
+		padding: 2px;
+		width: 80%;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 20px;
+		min-width: 600px;		
+	}
+	#header
+	{
+		height: 100px;
+	}
+	#cat-control a,
+	#cat-config a ,
+	#cat-tools a ,
+	#cat-map a {
+		padding-left: 32px;
+		padding-right: 32px;	
+		background-position: left center;
+	}
+}
