@@ -751,25 +751,23 @@ h2 {
 
 
 
-#cat-control a {
-	background: url('/images/default/control.png') scroll no-repeat left center;
+#cat-control a {	background: url('/images/default/control.png') scroll no-repeat left center;}
+#cat-config a {	background: url('/images/default/configuracio.png') scroll no-repeat left center;}
+#cat-tools a,
+#cat-apps a {	background: url('/images/default/eines.png') scroll no-repeat left center;}
+#cat-map a {		background: url('/images/default/planell.png') scroll no-repeat left center; }
+#cat-logout a {	background: url('/images/default/logout.png') scroll no-repeat left center; }
+#cat-save a {	background: url('/images/default/save.png') scroll no-repeat left center; }
+
+#cat-control a,
+#cat-config a ,
+#cat-tools a ,
+#cat-apps a,
+#cat-logout a,
+#cat-save a,
+#cat-map a {
 	padding-left: 32px;
 	padding-right: 32px;
-}
-#cat-config a {
-	background: url('/images/default/configuracio.png') scroll no-repeat left center;
-	padding-left: 32px;
-	padding-right: 32px;	
-}
-#cat-tools a {
-	background: url('/images/default/eines.png') scroll no-repeat left center;
-	padding-left: 32px;
-	padding-right: 32px;	
-}
-#cat-map a {
-	background: url('/images/default/planell.png') scroll no-repeat left center;
-	padding-left: 32px;
-	padding-right: 32px;	
 }
 
 #list li
@@ -902,6 +900,9 @@ select option[disabled]
 	#cat-control a,
 	#cat-config a ,
 	#cat-tools a ,
+	#cat-apps a,
+	#cat-logout a,
+	#cat-save a,
 	#cat-map a {
 		padding:0px;
 		width: 32px;
@@ -929,6 +930,9 @@ select option[disabled]
 	#cat-control a,
 	#cat-config a ,
 	#cat-tools a ,
+	#cat-apps a,
+	#cat-logout a,
+	#cat-save a,	
 	#cat-map a {
 		background-position: center center;
 	}	
@@ -949,6 +953,9 @@ select option[disabled]
 	#cat-control a,
 	#cat-config a ,
 	#cat-tools a ,
+	#cat-apps a,
+	#cat-logout a,
+	#cat-save a,	
 	#cat-map a {
 		padding-left: 32px;
 		padding-right: 32px;	
@@ -974,6 +981,9 @@ select option[disabled]
 	#cat-control a,
 	#cat-config a ,
 	#cat-tools a ,
+	#cat-apps a,
+	#cat-logout a,
+	#cat-save a,	
 	#cat-map a {
 		padding-left: 32px;
 		padding-right: 32px;	
