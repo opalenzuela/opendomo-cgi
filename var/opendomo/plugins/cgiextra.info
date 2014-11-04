@@ -1,5 +1,6 @@
 DESCRIPTION="Web Interface" 
 REQUIRED_BYTES="50000" 
 SCREENSHOTS="https://github.com/opalenzuela/opendomo-cgi/screenshot1.png" 
+VERSION="BETA"
 SCHEME="FEFABA FFFFFF" 
 ICON="cgiextra.png"
