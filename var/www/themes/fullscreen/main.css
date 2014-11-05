@@ -262,7 +262,7 @@ a em {
 }
 
 .categories li {
-	display: inline !important;
+	display: inline-block !important;
 	margin: 0px;
 	padding: 0px;
 }
@@ -883,6 +883,7 @@ select option[disabled]
 
 
 
+/* cellphone format */ 
 @media (max-width:480px) {
 	input.filterbox {
 		width: 100%;
@@ -904,8 +905,11 @@ select option[disabled]
 	#cat-logout a,
 	#cat-save a,
 	#cat-map a {
+		display: block;
+		font-size: 0;
 		padding:0px;
 		width: 32px;
+		height: 32px;
 		color:transparent;
 		padding-left: 0px;
 		padding-right: 0px;		
@@ -913,6 +917,7 @@ select option[disabled]
 		zoom: 1.2;
 	}
 }
+/*
 @media all and (orientation:portrait) {
 	input.filterbox {
 		width: 100%;
@@ -961,7 +966,7 @@ select option[disabled]
 		padding-right: 32px;	
 		background-position: left center;
 	}	
-}
+} */
 @media only screen and (min-width: 481px) {
 	input.filterbox {
 		float: right;
