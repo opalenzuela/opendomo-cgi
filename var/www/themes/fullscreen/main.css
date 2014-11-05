@@ -413,7 +413,7 @@ legend
 {
 	position: absolute;
     text-align: right;
-	margin: 3px 0px 0px 0px;
+	/*margin: 3px 0px 0px 0px; */
 	font-weight: bold;
 }
 
@@ -978,8 +978,8 @@ select option[disabled]
 		float: right;
 	}
 	body {
-		padding: 2px;
-		/*width: 80%; 
+		/*padding: 2px;
+		width: 80%; 
 		margin-left: auto;
 		margin-right: auto; */
 		margin-top: 20px;
