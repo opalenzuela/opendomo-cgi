@@ -98,16 +98,34 @@ li .imgframe {
 .iconlist ul li {
 	display: inline-block;
 	margin: 5px;
-	padding: 5px;
-	background-position: center;
+	background-position: center top;
 	background-size: 100px 100px;
-	height: 100px;
-	width: 100px;
+	background-repeat: no-repeat;
+	background-image: url("/images/default/pdtbg.png");
+	border-width: 2px;
+	border-style: solid;
+	border-radius: 10px;
+	height: 120px;
+	width: 120px;
 	overflow: hidden;
+	white-space: nowrap;
+	text-align: center;
 }
-.iconlist ul li label{
+.iconlist ul li a{
 	width: 100%;
 	height: 100%;
+	display: block;
+	position: relative;
+}
+.iconlist ul li a b{
+	position: absolute;
+	bottom: 0px;
+	white-space: nowrap;
+	font-weight: normal;
+	text-align: center;
+	left: 0px;
+	display: block;
+	width: 100%;	
 }
 
 /* Exception: in rowforms, the fields are shown in the same row */
@@ -979,9 +997,9 @@ select option[disabled]
 	}
 	body {
 		/*padding: 2px;
-		width: 80%; 
-		margin-left: auto;
-		margin-right: auto; */
+		width: 80%; */
+		margin-left: 0px;
+		margin-right: 0px; 
 		margin-top: 20px;
 		/*min-width: 600px; */		
 	}
@@ -1002,5 +1020,7 @@ select option[disabled]
 		padding-left: 25px;
 		padding-right: 10px;	
 		background-position: left center;
+		display: block;
+		line-height: 24px;		
 	}
 }
