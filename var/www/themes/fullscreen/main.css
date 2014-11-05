@@ -90,7 +90,6 @@ li .imgframe {
 /*	width: 50%; */
 }
 .tabform ul li p{
-	display: table-cell;
 	vertical-align: middle;
 }
 .tabform ul li label input {
@@ -152,7 +151,6 @@ li .imgframe {
 	padding-left: 20px;
 	height: 40px;
 	vertical-align: middle;
-	display: table-cell;
 }
 .tabform ul li.separator label, .listbox ul li.separator label, .detailed ul li.separator label {
 	padding-left: 10px;
@@ -482,55 +480,8 @@ legend
 */
 
 
-/* WIZARD 
- *	This block is characterized by it's appearance. It's actually a container
- *	of any other block (list or form), but with a background image, special
- *	margination and right-aligned toolbar buttons (typically "back"/"next")
- */
-@media (max-width:480px) {
-	.wizard {
-		background: url(/images/robot_wizard.png) no-repeat;
-		background-position: top left;
-		background-size: 60px;
-	}
 
-	.wizard ul{
-		margin: 0px;
-		display: block;
-		height: 250px;
-		overflow-y: auto;
-	}
-	.wizard ul li label{
-		padding-left: 20px;
-		padding-right: 20px;
-	} 
-}
-@media only screen and (min-width: 481px) {
-	.wizard {
-		background: url(/images/robot_wizard.png) no-repeat;
-		background-position: 10px 30px;
-	}
 
-	.wizard ul{
-		margin: 40px 10px 40px 200px;
-		display: block;
-		width: auto!important;
-		height: 250px;
-		overflow-y: auto;
-	}
-	.wizard ul li label{
-		padding-left: 20px;
-		padding-right: 20px;
-	}
-}
-
-.wizard ul li.separator label{
-	padding-left: 10px;
-}
-
-.wizard ul li p {
-	padding-right: 55px;
-}
 .wizard legend{
 	float:right;
 }
@@ -972,6 +923,35 @@ fieldset li.selected {
 		background-position: center center;
 		zoom: 1.2;
 	}
+	
+	/* WIZARD 
+	 *	This block is characterized by it's appearance. It's actually a container
+	 *	of any other block (list or form), but with a background image, special
+	 *	margination and right-aligned toolbar buttons (typically "back"/"next")
+	 */
+	.wizard {
+		background: url(/images/robot_wizard.png) no-repeat;
+		background-position: top left;
+		background-size: 30px;
+	}
+
+	.wizard ul{
+		margin: 0px;
+		display: block;
+		height: 250px;
+		overflow-y: auto;
+	}
+	.wizard ul li label{
+
+	} 	
+	
+	/* LABELS are shown over the fields in phone format */
+	.tabform ul li label, .listbox ul li label, .detailed ul li label {
+		display: block;
+	}
+	.tabform ul li p {
+		display: block;
+	}
 }
 /*
 @media all and (orientation:portrait) {
@@ -1055,4 +1035,41 @@ fieldset li.selected {
 		display: block;
 		line-height: 24px;		
 	}
+	
+	
+	/* WIZARD 
+	 *	This block is characterized by it's appearance. It's actually a container
+	 *	of any other block (list or form), but with a background image, special
+	 *	margination and right-aligned toolbar buttons (typically "back"/"next")
+	 */
+	.wizard {
+		background: url(/images/robot_wizard.png) no-repeat;
+		background-position: 10px 30px;
+	}
+
+	.wizard ul{
+		margin: 40px 10px 40px 200px;
+		display: block;
+		width: auto!important;
+		height: 250px;
+		overflow-y: auto;
+	}
+	.wizard ul li label{
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+	.wizard ul li p {
+		padding-right: 55px;
+	}
+	.wizard ul li.separator label{
+		padding-left: 10px;
+	}	
+	
+	/* LABELS are shown over the fields in phone format */
+	.tabform ul li label, .listbox ul li label, .detailed ul li label {
+		display: table-row;
+	}
+	.tabform ul li p {
+		display: table-row;
+	}	
 }
