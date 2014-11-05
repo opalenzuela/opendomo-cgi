@@ -183,7 +183,7 @@ body
 	line-height: 1;	
 	color: black; 
 	font-size: 14px; 
-	min-width: 600px;
+	/* min-width: 600px; */
 }
 
 a, a:visited, a:active {
@@ -785,12 +785,13 @@ h2 {
 	text-indent: 10px; */
 }
 
+/*
 #list li:hover
 {
 	vertical-align: middle; 
 	height: 40px;
 	padding-left: 10px;
-}
+} */
 #list li:hover a 
 {
 	color: orange; 
@@ -840,8 +841,7 @@ input[type=checkbox] {
 
 .listbox #list a{
 	background: url('/images/default/circle.png') scroll no-repeat left center;
-	padding-left: 32px;
-	padding-right: 32px;	
+	padding-left: 24px;
 }
 
 .listbox #list .dir a{
@@ -979,11 +979,11 @@ select option[disabled]
 	}
 	body {
 		padding: 2px;
-		width: 80%;
+		/*width: 80%; 
 		margin-left: auto;
-		margin-right: auto;
+		margin-right: auto; */
 		margin-top: 20px;
-		min-width: 600px;		
+		/*min-width: 600px; */		
 	}
 	#header
 	{
