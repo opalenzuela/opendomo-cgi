@@ -114,7 +114,7 @@ button:active, .buttonlnk:active {
 
 fieldset
 {
-	border: 3px dashed #AAAAAA;
+	border-color: #AAAAAA;
 }
 
 

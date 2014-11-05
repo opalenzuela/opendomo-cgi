@@ -381,9 +381,12 @@ input[type=number]{
 
 fieldset 
 {
-	border-radius: 10px;
+	/*border-radius: 10px;
 	-moz-border-radius: 10px;
 	-webkit-border-radius: 10px;
+	*/
+	border: 0px;
+	border-bottom: 1px inset;
 	margin: 0px;
 	padding: 0px;
 }
@@ -777,10 +780,9 @@ h2 {
 	font-weight: 600;
 	vertical-align: middle; 
 	height: 40px;
-	padding-left: 10px;
-    line-height: 3em;
-	text-indent: 10px;
-
+	line-height: 3em;
+	/*padding-left: 10px;
+	text-indent: 10px; */
 }
 
 #list li:hover
