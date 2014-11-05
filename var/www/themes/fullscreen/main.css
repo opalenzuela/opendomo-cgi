@@ -16,11 +16,11 @@ h2[id*='_lgnd_h2'], #logo_od,.tabberactive, .tabbernav
 {
 	display:none;
 }
-
+/*
 .selectable input[type='checkbox']{
 	display: inline !important;
 }
-
+*/
 .hidden {
 	display: none!important;
 }
@@ -429,9 +429,10 @@ a.tool {
 
 legend
 {
+/*
 	position: absolute;
     text-align: right;
-	/*margin: 3px 0px 0px 0px; */
+	margin: 3px 0px 0px 0px; */
 	font-weight: bold;
 }
 
@@ -900,6 +901,14 @@ ul#listControlPorts.tabform li div.off
 select option[disabled]
 {
 	background-color:gray;
+}
+
+fieldset.iconlist li.selected {
+	border: 2px solid gray!important;
+	border-radius: 10px;
+}
+fieldset li.selected {
+	background-color: #ddd!important;
 }
 
 
