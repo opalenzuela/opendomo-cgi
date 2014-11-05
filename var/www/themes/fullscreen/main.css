@@ -886,6 +886,9 @@ select option[disabled]
 
 /* cellphone format */ 
 @media (max-width:480px) {
+	#categ{
+		margin:0px;
+	}
 	input.filterbox {
 		width: 100%;
 		margin: 0px;
@@ -897,7 +900,7 @@ select option[disabled]
 	}
 	#header
 	{
-		height: 100px;
+		height: 50px;
 	}
 	#cat-control a,
 	#cat-config a ,
@@ -994,8 +997,8 @@ select option[disabled]
 	#cat-logout a,
 	#cat-save a,	
 	#cat-map a {
-		padding-left: 32px;
-		padding-right: 32px;	
+		padding-left: 25px;
+		padding-right: 10px;	
 		background-position: left center;
 	}
 }

@@ -61,10 +61,9 @@ h2 {
 {
 	font-weight: bold;
 	background-color: #FFF;
-	background-image: url(/images/default/logo.png);
-	background-repeat: no-repeat;
-	border-color: #6E6E6E;
-
+	/*background-image: url(/images/default/logo.png);
+	background-repeat: no-repeat; */
+	border-color: #6E6E6E; 
 }
 
 
