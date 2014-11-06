@@ -885,10 +885,13 @@ fieldset li.selected {
 
 
 /* Booleans */
+li.boolean label {
+	height: 32px;
+}
 li.checked label {
 	background: url('/images/default/on.png') center right no-repeat;
 }
-li.unckecked label {
+li.unchecked label {
 	background: url('/images/default/off.png') center right no-repeat;
 }
 
