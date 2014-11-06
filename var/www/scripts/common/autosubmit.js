@@ -14,7 +14,7 @@ function submitForm(formID) {
         $.ajax({
         type: "POST",
         url: $("#"+formID).attr("action")+"?GUI=XML",
-		async: false; 
+		async: false, 
         data: dataString,
         dataType: "text/xml",
         success: function(data) {
