@@ -897,6 +897,19 @@ li.unchecked  {
 } */
 
 
+#bubble_frame {
+	width: 80%;
+	margin: auto;
+	overflow: auto;
+	background: white;
+	border: 2px solid #AAA;
+	border-radius: 10px;
+	box-shadow:1px 2px 1px rgba(000,000,000,0.5),inset 1px 2px 1px rgba(255,255,255,0.6);
+}
+#bubble_frame iframe {
+	width: 100%;
+}
+
 /* cellphone format */ 
 @media (max-width:480px) {
 	#categ{
