@@ -148,8 +148,6 @@ li .imgframe {
 
 /* List items (and form fields) are idented 10px from the separators */
 .tabform ul li label, .listbox ul li label, .detailed ul li label  {
-	padding-left: 20px;
-	height: 40px;
 	vertical-align: middle;
 }
 .tabform ul li.separator label, .listbox ul li.separator label, .detailed ul li.separator label {
@@ -621,11 +619,10 @@ p {
 	max-height: 260px;
 }
 
-/* Width=200% is equivalent to colspan=2 */
+/* iframe */
 .embeddedapp {
 	display:block;
 	height:300px;
-	width:200%; 
 }
 
 .hidden {
@@ -952,6 +949,12 @@ fieldset li.selected {
 	.tabform ul li p {
 		display: block;
 	}
+	
+	/* Width=200% is equivalent to colspan=2 */
+	.embeddedapp {
+		height:300px;
+		width:100%; 
+	}	
 }
 /*
 @media all and (orientation:portrait) {
@@ -1067,9 +1070,17 @@ fieldset li.selected {
 	
 	/* LABELS are shown over the fields in phone format */
 	.tabform ul li label, .listbox ul li label, .detailed ul li label {
+		padding-left: 20px; 
+		height: 40px; 	
 		display: table-row;
 	}
 	.tabform ul li p {
 		display: table-row;
 	}	
+	
+	/* Width=200% is equivalent to colspan=2 */
+	.embeddedapp {
+		height:300px;
+		width:200%; 
+	}
 }
