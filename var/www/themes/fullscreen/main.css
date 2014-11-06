@@ -884,6 +884,15 @@ fieldset li.selected {
 
 
 
+/* Booleans */
+li.checked label {
+	background: url('/images/default/on.png') center right no-repeat;
+}
+li.unckecked label {
+	background: url('/images/default/off.png') center right no-repeat;
+}
+
+
 /* cellphone format */ 
 @media (max-width:480px) {
 	#categ{
