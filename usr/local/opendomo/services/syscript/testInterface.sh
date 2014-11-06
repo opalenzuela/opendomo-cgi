@@ -72,7 +72,7 @@ echo
 
 
 echo "#>Data form"
-echo "form:test.sh	filterable autosubmit"
+echo "form:about.sh	filterable autosubmit"
 echo "	none1	Separator1	separator"
 echo "	passw	Password	password"
 echo "	reado	Readonly field	readonly	Field value"
