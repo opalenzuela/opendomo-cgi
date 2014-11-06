@@ -888,12 +888,13 @@ fieldset li.selected {
 li.boolean label {
 	height: 32px;
 }
+/*
 li.checked  {
 	background: url('/images/default/on.png') center right no-repeat;
 }
 li.unchecked  {
 	background: url('/images/default/off.png') center right no-repeat;
-}
+} */
 
 
 /* cellphone format */ 
@@ -967,6 +968,14 @@ li.unchecked  {
 	.embeddedapp {
 		height:300px;
 		width:100%; 
+	}	
+	
+	/* Booleans */
+	li.checked  label {
+		background: url('/images/default/on.png') center right no-repeat;
+	}
+	li.unchecked  label {
+		background: url('/images/default/off.png') center right no-repeat;
 	}	
 }
 /*
@@ -1097,4 +1106,12 @@ li.unchecked  {
 		height:300px;
 		width:200%; 
 	}
+	
+	/* Booleans */
+	li.checked  p {
+		background: url('/images/default/on.png') center right no-repeat;
+	}
+	li.unchecked  p {
+		background: url('/images/default/off.png') center right no-repeat;
+	}	
 }

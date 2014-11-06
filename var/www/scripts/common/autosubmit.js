@@ -1,5 +1,5 @@
 $(function(){
-	$("fieldset.autosubmit input").on("change",function(){
+	$("fieldset.autosubmit input, fieldset.autosubmit select").on("change",function(){
 		var id = $(this).closest("form").attr("id");
 		submitForm(id);
 	});
@@ -12,17 +12,14 @@ function submitForm(formID) {
         var dataString = $("#"+formID).serialize();
 		var url = $("#"+formID).attr("action")+"?GUI=XML";
      
-		$.post(url,dataString, function(data){
+		$.post(url,dataString)
+		.done(function(data) {
+			console.log( "success" );
 			console.log(data);
-		}, "text/xml")
-		.done(function() {
-			console.log( "second success" );
 		})
-		.fail(function() {
+		.fail(function(data) {
 			console.log( "error" );
-		})
-		.always(function() {
-			console.log( "finished" );
+			console.log(data);
 		});
         /*$.ajax({
         type: "POST",
