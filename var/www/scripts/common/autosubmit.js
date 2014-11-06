@@ -6,28 +6,44 @@ $(function(){
 });
 
 function submitForm(formID) {
-    $("#"+formID).submit(function(e){
-		e.preventDefault();
+    //$("#"+formID).submit(function(e){
+		//e.preventDefault();
  
         var dataString = $("#"+formID).serialize();
+		var url = $("#"+formID).attr("action")+"?GUI=XML";
      
-        $.ajax({
+		$.post(url,dataString, function(data){
+			console.log(data);
+		}, "text/xml")
+		.done(function() {
+			console.log( "second success" );
+		})
+		.fail(function() {
+			console.log( "error" );
+		})
+		.always(function() {
+			console.log( "finished" );
+		});
+        /*$.ajax({
         type: "POST",
-        url: $("#"+formID).attr("action")+"?GUI=XML",
-		async: false, 
+        url: url,
         data: dataString,
         dataType: "text/xml",
-        success: function(data) {
+        done: function(data) {
 			console.log("Success");
 			console.log(data);
 			},
 		fail: function(data) {
 			console.log("Fail");
 			console.log(data);
-			}
+			},
+		always: function(data) {
+			console.log("Always");
+			console.log(data);
+			}			
            
-        });         
+        });         */
      
-	});
+	//});
 
 }
