@@ -23,7 +23,7 @@ h2[id*='_lgnd_h2'], #logo_od,.tabberactive, .tabbernav
 	display: inline !important;
 }
 */
-.selectable ul li.item {
+.selectable ul li {
 	border-style: dashed!important;
 }
 .hidden {
@@ -57,6 +57,7 @@ li .imgframe {
 }
 .listbox ul li, .detailed ul li, .selectable ul li {
 	height: 35px;
+	border-width: 0;
 }
 .listbox ul li p , .iconlist ul li p, .selectable ul li p, .wizard ul li p{
 	display: none;
@@ -904,9 +905,10 @@ li.unchecked  {
 	width: 80%;
 	height: 80%;
 	position: fixed;
-	top: 20%;
+	top: 10%;
+	left: 10%;
 	margin: auto;
-	overflow: auto;
+	overflow: hidden;
 	background: white;
 	border: 2px solid #AAA;
 	border-radius: 10px;
@@ -914,7 +916,12 @@ li.unchecked  {
 }
 #bubble_frame iframe {
 	width: 100%;
-	margin: 20px;
+	/* margin: 20px; */
+	border: none;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	scroll-behavior: initial;
+	overflow: overlay;
 }
 
 /* cellphone format */ 
