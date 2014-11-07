@@ -899,6 +899,9 @@ li.unchecked  {
 
 #bubble_frame {
 	width: 80%;
+	height: 80%;
+	position: fixed;
+	top: 20%;
 	margin: auto;
 	overflow: auto;
 	background: white;
@@ -908,6 +911,7 @@ li.unchecked  {
 }
 #bubble_frame iframe {
 	width: 100%;
+	margin: 20px;
 }
 
 /* cellphone format */ 
