@@ -23,6 +23,9 @@ h2[id*='_lgnd_h2'], #logo_od,.tabberactive, .tabbernav
 	display: inline !important;
 }
 */
+.selectable ul li.item {
+	border-style: dashed!important;
+}
 .hidden {
 	display: none!important;
 }
