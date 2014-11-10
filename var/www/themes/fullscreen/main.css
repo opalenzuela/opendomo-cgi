@@ -25,6 +25,10 @@ h2[id*='_lgnd_h2'], #logo_od,.tabberactive, .tabbernav
 */
 .selectable ul li {
 	border-style: dashed!important;
+	background: url("/images/default/circle.png") left center no-repeat;
+}
+.selectable ul li.selected {
+	background: url("/images/default/circle_sel.png") left center no-repeat;
 }
 .hidden {
 	display: none!important;
@@ -70,7 +74,7 @@ li .imgframe {
 .detailed ul li {
 	display: table-row;
 }
-.detailed ul li label {
+.detailed ul li a {
 	display: table-cell;	
 }
 .detailed ul li p{
@@ -102,12 +106,12 @@ li .imgframe {
 /* Exception: in iconlists, setting inline to fit page width */
 .iconlist ul li {
 	display: inline-block;
-	margin: 5px;
+	margin: 1px;
 	background-position: center top;
 	background-size: 100px 100px;
 	background-repeat: no-repeat;
 	background-image: url("/images/default/pdtbg.png");
-	border-width: 2px;
+	border-width: 1pt;
 	border-style: solid;
 	border-radius: 10px;
 	height: 120px;
@@ -830,25 +834,20 @@ input[type=checkbox] {
 .toolbar {
 	margin:0px;
 	padding:0px;
-	border-bottom-left-radius: 10px;
-	border-bottom-right-radius: 10px;
-	text-align: left;	
-	border: 1pt solid #2A568E;
+	border: 1pt solid;
 	border-radius: 10px;
-	display: flex;
 	text-align: center;
+	margin-bottom: 20px;
 }
 .toolbar button {
 	border-radius: 0px;
-	display: table-cell;
 	border: none;
 	padding: 0px 20px;
 	margin: 0px 10px;	
 }
 
 
-
-
+/* LISTBOX */
 .listbox #list a{
 	background: url('/images/default/circle.png') scroll no-repeat left center;
 	padding-left: 24px;

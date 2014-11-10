@@ -114,13 +114,13 @@ button:active, .buttonlnk:active {
 
 fieldset
 {
-	border-color: #AAAAAA;
+	/*border-color: #AAAAAA; */
 }
 
 
 legend 
 {
-	color: #AAAAAA;
+	color: #2A568E;
 }
 
 .toolbar 
