@@ -1031,9 +1031,11 @@ input[type="file"] {
 	}	
 	
 	/* Booleans */
+	li.sw_on label,
 	li.checked  label {
 		background: url('/images/default/on.png') center right no-repeat;
 	}
+	li.sw_off label,
 	li.unchecked  label {
 		background: url('/images/default/off.png') center right no-repeat;
 	}	
@@ -1042,6 +1044,7 @@ input[type="file"] {
 	li.switch label {
 		border: 1px solid;
 		border-radius: 10px;
+		height: 32px;
 	}
 	li.switch p {
 		display: none!important;
@@ -1183,12 +1186,14 @@ input[type="file"] {
 	}
 	
 	/* Booleans */
+	li.sw_on p,
 	li.checked  p {
 		background: url('/images/default/on.png') center right no-repeat;
 	}
+	li.sw_off p,
 	li.unchecked  p {
 		background: url('/images/default/off.png') center right no-repeat;
-	}	
+	}
 	
 	/* Switch */
 	li.switch p {

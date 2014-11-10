@@ -12,7 +12,8 @@ $(function(){
 	// Refresh all booleans
 	$("li.boolean").trigger("click");
 	
-	$("li.switch").on("click",function(){
+	$("li.switch").on("click",function(event){
+		event.preventDefault();
 		var selID = $(this).find("select").prop("id");
 		var s = document.getElementById(selID);
 		if (s) {
@@ -26,7 +27,7 @@ $(function(){
 			}
 			literal = s.options[s.selectedIndex].value; 
 			$(this).addClass("sw_" + literal);
-			$(this).find("p").text(literal);
+			//$(this).find("p").text(literal);
 		}
 	});
 });
