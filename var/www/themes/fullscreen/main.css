@@ -829,22 +829,22 @@ input[type=checkbox] {
 /* TOOLBARS */
 .toolbar {
 	margin:0px;
-	padding:5px;
+	padding:0px;
 	border-bottom-left-radius: 10px;
 	border-bottom-right-radius: 10px;
 	text-align: left;	
-	border-color: #2A568E;
+	border: 1pt solid #2A568E;
 	border-radius: 10px;
-	border-width: 1pt;
 }
 .toolbar button {
-	background-color: transparent;
-	color: #2A568E;
 	border: none;
+	padding: 0px;
+	color: white;
+	background-color: #2A568E;	
 }
 .toolbar button:hover{
-	color: white;
-	background-color: #2A568E;
+	background-color: white;
+	color: #2A568E;
 }
 
 
