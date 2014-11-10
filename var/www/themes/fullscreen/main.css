@@ -60,9 +60,10 @@ li label {
 li .imgframe {
 	display: none;
 }
-.listbox ul, .detailedlist ul, .tabform ul, {
+.listbox ul, .detailedlist ul, .tabform ul {
 	list-style-type:none;
 	padding: 0px;
+	display: table;
 }
 .listbox ul li, .detailed ul li, .selectable ul li {
 	height: 35px;
@@ -930,7 +931,7 @@ li.unchecked  {
 }
 #bubble_frame iframe {
 	width: 100%;
-	/* margin: 20px; */
+	height: 100%;
 	border: none;
 	margin-top: 10px;
 	margin-bottom: 10px;
