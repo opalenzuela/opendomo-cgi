@@ -125,10 +125,17 @@ legend
 
 .toolbar 
 {
-	margin:0px;
-	padding:5px;
+	border-color: #2A568E;
+	background: #2A568E;
 }
-
+.toolbar button {
+	color: white;
+	background: #2A568E;
+}
+.toolbar button:hover{
+	background: white;
+	color: #2A568E;
+}
 
 
 .sel {

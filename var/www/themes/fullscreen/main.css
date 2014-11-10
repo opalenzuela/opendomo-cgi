@@ -836,20 +836,16 @@ input[type=checkbox] {
 	border: 1pt solid #2A568E;
 	border-radius: 10px;
 	display: flex;
+	text-align: center;
 }
 .toolbar button {
 	border-radius: 0px;
 	display: table-cell;
 	border: none;
 	padding: 0px 20px;
-	margin: 0px;	
-	color: white;
-	background: #2A568E;	
+	margin: 0px 10px;	
 }
-.toolbar button:hover{
-	background: white;
-	color: #2A568E;
-}
+
 
 
 
