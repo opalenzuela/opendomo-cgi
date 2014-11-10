@@ -1033,17 +1033,26 @@ input[type="file"] {
 	/* Booleans */
 	li.sw_on label,
 	li.checked  label {
-		background: url('/images/default/on.png') center right no-repeat;
+		background: url('/themes/fullscreen/on.png') center right no-repeat;
 	}
 	li.sw_off label,
 	li.unchecked  label {
-		background: url('/images/default/off.png') center right no-repeat;
-	}	
+		background: url('/themes/fullscreen/off.png') center right no-repeat;
+	}
+	li.sw_up label {
+		background: url('/themes/fullscreen/up.png') center right no-repeat;
+	}
+	li.sw_down label {
+		background: url('/themes/fullscreen/down.png') center right no-repeat;
+	}
+	li.sw_stop label {
+		background: url('/themes/fullscreen/stop.png') center right no-repeat;
+	}		
 	
 	/* Switch */
 	li.switch label {
-		border: 1px solid;
-/*		border-radius: 10px;
+/*		border: 1px solid;
+		border-radius: 10px;
 		height: 32px; */
 	}
 	li.switch p {
@@ -1056,56 +1065,7 @@ input[type="file"] {
 		max-height: 180px;
 	}	
 }
-/*
-@media all and (orientation:portrait) {
-	input.filterbox {
-		width: 100%;
-		margin: 0px;
-	}
-	body {
-		width:100%;
-		margin: 0px;
-		border:none;
-	}
-	#header
-	{
-		height: 100px;
-	}
-	#cat-control a,
-	#cat-config a ,
-	#cat-tools a ,
-	#cat-apps a,
-	#cat-logout a,
-	#cat-save a,	
-	#cat-map a {
-		background-position: center center;
-	}	
-}
-@media all and (orientation:landscape) {
-	input.filterbox {
-		float: right;
-	}
-	body {
-		width:100%;
-		margin: 0px;
-		border:none;
-	}
-	#header
-	{
-		height: 100px;
-	}
-	#cat-control a,
-	#cat-config a ,
-	#cat-tools a ,
-	#cat-apps a,
-	#cat-logout a,
-	#cat-save a,	
-	#cat-map a {
-		padding-left: 32px;
-		padding-right: 32px;	
-		background-position: left center;
-	}	
-} */
+
 @media only screen and (min-width: 481px) {
 	input.filterbox {
 		float: right;
@@ -1188,12 +1148,21 @@ input[type="file"] {
 	/* Booleans */
 	li.sw_on p,
 	li.checked  p {
-		background: url('/images/default/on.png') center right no-repeat;
+		background: url('/themes/fullscreen/on.png') center right no-repeat;
 	}
 	li.sw_off p,
 	li.unchecked  p {
-		background: url('/images/default/off.png') center right no-repeat;
+		background: url('/themes/fullscreen/off.png') center right no-repeat;
 	}
+	li.sw_up p {
+		background: url('/themes/fullscreen/up.png') center right no-repeat;
+	}
+	li.sw_down p {
+		background: url('/themes/fullscreen/down.png') center right no-repeat;
+	}
+	li.sw_stop p {
+		background: url('/themes/fullscreen/stop.png') center right no-repeat;
+	}			
 	
 	/* Switch */
 	li.switch p {
