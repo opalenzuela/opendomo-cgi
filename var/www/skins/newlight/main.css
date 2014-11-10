@@ -82,7 +82,7 @@ h2 {
 	background-color: white;
 	border-color: #6E6E6E;
 }
-
+/*
 button, .buttonlnk {
 	background:#25A6E1;
 	background:-moz-linear-gradient(top,#2A568E 0%,#053F95 100%);
@@ -111,6 +111,7 @@ button:active, .buttonlnk:active {
 	background:linear-gradient(top,#053F95 0%,#053F95 100%);
 	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#053F95',endColorstr='#053F95',GradientType=0);
 }
+*/
 
 fieldset
 {

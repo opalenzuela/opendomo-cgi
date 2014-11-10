@@ -342,12 +342,12 @@ width: 90%;
 width: 90%;
 } 
 
-button, .buttonlnk
+/*button, .buttonlnk
 {
 	font-size:12px;
 	font-weight: bold;
 	font-family:Helvetica, Arial, Verdana;
-	text-align:left;
+	text-align:left; 
 	color:#FFFFFF;
 	height:25px;
 	background-color:#053f95;
@@ -365,7 +365,7 @@ button, .buttonlnk
 	float:left;
 	padding: 4px;
    	height:15px;
-}
+} */
 
 .buttonlnk:link {text-decoration: none;color:#FFF;}
 .buttonlnk:visited {text-decoration: none;color:#FFF;}
@@ -447,8 +447,9 @@ legend
 /*
 	position: absolute;
     text-align: right;
-	margin: 3px 0px 0px 0px; */
-	font-weight: bold;
+	margin: 3px 0px 0px 0px; 
+	font-weight: bold; */
+	font-size: large;
 }
 
 
