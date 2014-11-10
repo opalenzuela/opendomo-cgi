@@ -11,4 +11,22 @@ $(function(){
 	});
 	// Refresh all booleans
 	$("li.boolean").trigger("click");
+	
+	$("li.switch").on("click",function(){
+		var selID = $(this).find("select").prop("id");
+		var s = document.getElementById(selID);
+		if (s) {
+			var literal = s.options[s.selectedIndex].value; 
+			$(this).removeClass("sw_" + literal);		
+			//if (s.selectedIndex < s.options.length){
+			s.selectedIndex++;
+			if (s.selectedIndex==-1)
+			{
+				s.selectedIndex=0;
+			}
+			literal = s.options[s.selectedIndex].value; 
+			$(this).addClass("sw_" + literal);
+			$(this).find("p").text(literal);
+		}
+	});
 });
