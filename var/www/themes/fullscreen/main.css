@@ -409,6 +409,7 @@ fieldset
 	border-bottom: 1px inset;
 	margin: 0px;
 	padding: 0px;
+	margin-bottom: 20px;
 }
 
 a.tool {
@@ -599,13 +600,6 @@ p {
 .noscript {
 	font-size: 12pt;
 	color: #BCBCBC;
-}
-.toolbar {
-	margin:0px;
-	padding:5px;
-	border-bottom-left-radius: 10px;
-	border-bottom-right-radius: 10px;
-	text-align: left;	
 }
 .sel {
 	background-color: #DDD!important;
@@ -831,6 +825,28 @@ h2 {
 input[type=checkbox] {
 	display:none;
 }
+
+/* TOOLBARS */
+.toolbar {
+	margin:0px;
+	padding:5px;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	text-align: left;	
+	border-color: #2A568E;
+	border-radius: 10px;
+	border-width: 1pt;
+}
+.toolbar button {
+	background-color: transparent;
+	color: #2A568E;
+	border: none;
+}
+.toolbar button:hover{
+	color: white;
+	background-color: #2A568E;
+}
+
 
 
 .listbox #list a{
