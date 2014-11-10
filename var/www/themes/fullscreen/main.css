@@ -30,6 +30,11 @@ h2[id*='_lgnd_h2'], #logo_od,.tabberactive, .tabbernav
 .selectable ul li.selected {
 	background: url("/images/default/circle_sel.png") left center no-repeat;
 }
+.listbox ul li a, 
+.selectable ul li a {
+	display: table-cell;
+	vertical-align: middle;
+}
 .hidden {
 	display: none!important;
 }
@@ -685,10 +690,7 @@ h2 {
 	color: #222;
 }
 
-.listbox li:hover {
-	background: #DFDFDF;
-	color: #222;
-}
+
 
 .info, .success, .warning, .error, .validation, .errorcont, .notice, .loading, .link, .comments {
 	border: 1px solid;

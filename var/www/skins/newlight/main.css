@@ -166,11 +166,13 @@ h2 {
 
 .listbox li:hover,
 .detailed li:hover,
-.selectable li:hover,
+.selectable li:hover
  {
 	background: #DFDFDF;
 	color: #222;
 }
+
+
 
 .message {
 	border: 1px solid red;
