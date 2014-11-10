@@ -1043,8 +1043,8 @@ input[type="file"] {
 	/* Switch */
 	li.switch label {
 		border: 1px solid;
-		border-radius: 10px;
-		height: 32px;
+/*		border-radius: 10px;
+		height: 32px; */
 	}
 	li.switch p {
 		display: none!important;
@@ -1197,8 +1197,8 @@ input[type="file"] {
 	
 	/* Switch */
 	li.switch p {
-		border: 1px solid;
-		border-radius: 10px;
+		/*border: 1px solid;
+		border-radius: 10px; */
 	}	
 	
 	/* Limit the image to screen size */

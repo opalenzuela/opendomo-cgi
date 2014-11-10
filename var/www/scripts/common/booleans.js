@@ -12,6 +12,16 @@ $(function(){
 	// Refresh all booleans
 	$("li.boolean").trigger("click");
 	
+	$("li.switch").each(function(){
+		var selID = $(this).find("select").prop("id");
+		var s = document.getElementById(selID);
+		if (s) {	
+			var literal = s.options[s.selectedIndex].value; 
+			$(this).addClass("sw_" + literal);
+		}
+	});
+	
+	
 	$("li.switch").on("click",function(event){
 		event.preventDefault();
 		var selID = $(this).find("select").prop("id");
