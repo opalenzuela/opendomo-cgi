@@ -168,7 +168,7 @@ h2 {
 .detailed li:hover,
 .selectable li:hover
  {
-	background: #DFDFDF;
+	background-color: #DFDFDF;
 	color: #222;
 }
 

@@ -77,7 +77,7 @@ li .imgframe {
 .detailed ul {
 	display: table;
 }
-.detailed ul li {
+.listbox ul li, .detailed ul li, .selectable ul li {
 	display: table-row;
 }
 .detailed ul li a {
