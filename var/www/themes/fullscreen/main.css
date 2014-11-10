@@ -74,7 +74,7 @@ li .imgframe {
 }
 
 /* Exception: in detailed list, items and details are in a table row */
-.detailed ul {
+.listbox ul li, .detailed ul li, .selectable ul li {
 	display: table;
 }
 .listbox ul li, .detailed ul li, .selectable ul li {
@@ -747,13 +747,12 @@ h2 {
 
 
 
-#cat-control a {	background: url('/images/default/control.png') scroll no-repeat left center;}
-#cat-config a {	background: url('/images/default/configuracio.png') scroll no-repeat left center;}
+#cat-control a {	background: url('control.png') scroll no-repeat left center;}
+#cat-config a {	background: url('config.png') scroll no-repeat left center;}
 #cat-tools a,
-#cat-apps a {	background: url('/images/default/eines.png') scroll no-repeat left center;}
-#cat-map a {		background: url('/images/default/planell.png') scroll no-repeat left center; }
-#cat-logout a {	background: url('/images/default/logout.png') scroll no-repeat left center; }
-#cat-save a {	background: url('/images/default/save.png') scroll no-repeat left center; }
+#cat-apps a {	background: url('apps.png') scroll no-repeat left center;}
+#cat-logout a {	background: url('logout.png') scroll no-repeat left center; }
+#cat-save a {	background: url('save.png') scroll no-repeat left center; }
 
 #cat-control a,
 #cat-config a ,
