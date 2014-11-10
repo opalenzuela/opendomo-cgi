@@ -342,6 +342,10 @@ width: 90%;
 width: 90%;
 } 
 
+button, .buttonlnk {
+	height:25px;
+}
+
 /*button, .buttonlnk
 {
 	font-size:12px;
@@ -349,7 +353,7 @@ width: 90%;
 	font-family:Helvetica, Arial, Verdana;
 	text-align:left; 
 	color:#FFFFFF;
-	height:25px;
+
 	background-color:#053f95;
 	border: 1px solid #053f95;
 	border-left-color:#021f4a;
@@ -391,10 +395,10 @@ input[type=email],
 input[type=password],
 input[type=date] {
 	border-color: #AFAFAF;
-	border-radius: 3px 3px 3px 3px;
+	border-radius: 3px;
 	border-style: solid;
 	border-width: 1px;
-	box-shadow: 0 0 5px #CFCFCF inset;
+	/*box-shadow: 0 0 5px #CFCFCF inset; */
 }
 select,
 input[type=text], 
@@ -940,6 +944,12 @@ li.unchecked  {
 	overflow: overlay;
 }
 
+/* FILE UPLOAD STYLE */
+input[type="file"] {
+	left: -9999px;
+	position: absolute;
+}
+
 /* cellphone format */ 
 @media (max-width:480px) {
 	#categ{
@@ -1171,3 +1181,4 @@ li.unchecked  {
 		max-height: 260px;
 	}
 }
+
