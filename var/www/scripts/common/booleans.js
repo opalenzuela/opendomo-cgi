@@ -12,7 +12,7 @@ $(function(){
 	// Refresh all booleans
 	$("li.boolean").trigger("click");
 	
-	$("li.switch").each(function(){
+	$("li.switch, li.pushbutton").each(function(){
 		var selID = $(this).find("select").prop("id");
 		var s = document.getElementById(selID);
 		if (s) {	
@@ -41,7 +41,7 @@ $(function(){
 		}
 	});
 	
-	$("li.pushbutton").on("mousedown",function(event){
+	$("li.pushbutton").on("touchstart mousedown",function(event){
 		event.preventDefault();
 		var t = $(this);
 		t.removeClass("sw_off");
@@ -51,7 +51,7 @@ $(function(){
 		}
 	});
 	
-	$("li.pushbutton").on("mouseup",function(event){
+	$("li.pushbutton").on("touchend mouseup",function(event){
 		event.preventDefault();
 		var t = $(this);
 		t.removeClass("sw_on");
