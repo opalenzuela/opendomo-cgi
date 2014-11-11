@@ -40,4 +40,24 @@ $(function(){
 			//$(this).find("p").text(literal);
 		}
 	});
+	
+	$("li.pushbutton").on("mousedown",function(event){
+		event.preventDefault();
+		var t = $(this);
+		t.removeClass("sw_off");
+		if (!t.hasClass("sw_on")) {
+			t.addClass("sw_on");
+			t.find("select").val("on");
+		}
+	});
+	
+	$("li.pushbutton").on("mouseup",function(event){
+		event.preventDefault();
+		var t = $(this);
+		t.removeClass("sw_on");
+		if (!t.hasClass("sw_off")) {
+			t.addClass("sw_off");
+			t.find("select").val("off");
+		}
+	});	
 });

@@ -91,6 +91,7 @@ echo "	bool5	Boolean default	boolean"
 echo "	swch01	Switch on	list[on,off] switch	on"
 echo "	swch02	Switch off	list[on,off] switch	off"
 echo "	swch03	Tristate Switch	list[up,stop,down] switch	stop"
+echo "	push	Pushbutton	list[on,off] pushbutton";
 echo "	range1	Range 1	range	50"
 echo "	range2	Range 2	range	100"
 echo "	range3	Range 3	range	0"

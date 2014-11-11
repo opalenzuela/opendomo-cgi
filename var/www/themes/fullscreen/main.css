@@ -918,7 +918,8 @@ li.unchecked  {
 } */
 
 /* SWITCH FIELDS */
-li.switch select {
+li.switch select,
+li.pushbutton select {
 	display: none;
 }
 
@@ -1045,12 +1046,14 @@ input[type="file"] {
 	li.sw_stop label {
 		background: url('/themes/fullscreen/stop.png') center right no-repeat;
 	}		
-	li.switch label {
+	li.switch label,
+	li.pushbutton label{
 /*		border: 1px solid;
 		border-radius: 10px;
 		height: 32px; */
 	}
-	li.switch p {
+	li.switch p,
+	li.pushbutton p {
 		display: none!important;
 	}
 	
@@ -1139,7 +1142,8 @@ input[type="file"] {
 	}
 	
 	/* Booleans and switches */
-	li.switch p {
+	li.switch p,
+	li.pushbutton p	{
 		/*border: 1px solid;
 		border-radius: 10px; */
 	}		
