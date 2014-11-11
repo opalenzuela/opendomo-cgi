@@ -60,7 +60,7 @@ li label {
 li .imgframe {
 	display: none;
 }
-.listbox ul, .detailedlist ul, .tabform ul {
+.listbox ul, .detailed ul, .tabform ul {
 	list-style-type:none;
 	padding: 0px;
 	display: table;
