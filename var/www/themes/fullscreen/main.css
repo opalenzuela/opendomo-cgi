@@ -60,7 +60,7 @@ li label {
 li .imgframe {
 	display: none;
 }
-.listbox ul, .detailed ul, .tabform ul {
+.listbox ul, .detailed ul, .tabform ul, .selectable ul {
 	list-style-type:none;
 	padding: 0px;
 	display: table;
@@ -1015,7 +1015,7 @@ input[type="file"] {
 	/* LABELS are shown over the fields in phone format */
 	.tabform ul li label, .listbox ul li label, .detailed ul li label {
 		display: block;
-		line-height: 1.5em;
+		line-height: 2em;
 	}
 	.tabform ul li p {
 		display: block;
@@ -1125,7 +1125,7 @@ input[type="file"] {
 	.tabform ul li label, .listbox ul li label, .detailed ul li label {
 		padding-left: 20px; 
 		height: 40px; 	
-		line-height: 1.5em;
+		line-height: 2em;
 		display: table-cell;
 	}
 	.tabform ul li p {
