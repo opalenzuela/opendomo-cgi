@@ -24,13 +24,13 @@ h2[id*='_lgnd_h2'], #logo_od,.tabberactive, .tabbernav
 }
 */
 .selectable ul li a{
-	background: url("/images/default/circle.png") left center no-repeat;
+	background: url("/images/unchecked.png") left center no-repeat;
 }
 .selectable ul li {
 	border-style: dashed!important;
 }
 .selectable ul li.selected a {
-	background: url("/images/default/circle_sel.png") left center no-repeat;
+	background: url("/images/checked.png") left center no-repeat;
 }
 .listbox ul li a, 
 .selectable ul li a {
