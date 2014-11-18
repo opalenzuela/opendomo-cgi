@@ -4,7 +4,7 @@ $(function(){
 		submitForm(id);
 	});
 	// Submit button is not necessary anymore:
-	$("fieldset.tabform button[type=submit]").hide();
+	$("fieldset.autosubmit button[type=submit]").hide();
 });
 
 function submitForm(formID) {
