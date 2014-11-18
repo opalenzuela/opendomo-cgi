@@ -31,7 +31,7 @@ h2[id*='_lgnd_h2'], #logo_od,.tabberactive, .tabbernav
 .detailed.selectable ul li.selected a {
 	background: url("/images/checked.png") left center no-repeat;
 }
-.iconview.selectable ul li {
+.iconlist.selectable ul li {
 	border-style: dashed!important;
 }
 
