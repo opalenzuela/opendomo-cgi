@@ -23,15 +23,18 @@ h2[id*='_lgnd_h2'], #logo_od,.tabberactive, .tabbernav
 	display: inline !important;
 }
 */
-.selectable ul li a{
+.listbox.selectable ul li a,
+.detailed.selectable ul li a{
 	background: url("/images/unchecked.png") left center no-repeat;
 }
-.selectable ul li {
-	border-style: dashed!important;
-}
-.selectable ul li.selected a {
+.listbox.selectable ul li.selected a ,
+.detailed.selectable ul li.selected a {
 	background: url("/images/checked.png") left center no-repeat;
 }
+.iconview.selectable ul li {
+	border-style: dashed!important;
+}
+
 .listbox ul li a, 
 .selectable ul li a {
 	display: table-cell;
