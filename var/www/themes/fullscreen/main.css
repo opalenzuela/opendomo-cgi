@@ -73,7 +73,7 @@ li .imgframe {
 .listbox ul li, .detailed ul li, .selectable ul li {
 	height: 35px;
 	border-width: 0;
-	text-indent: 20px;
+	text-indent: 24px;
 }
 .listbox ul li p , .iconlist ul li p, .selectable ul li p, .wizard ul li p{
 	display: none;
@@ -746,7 +746,12 @@ h2 {
 }
 .separator {
 	font-weight: bold;
+	display: block!important;
 }
+.separator a {
+
+}
+
 .errfield {
 	background-color: #FCC;	
 	color: #F00;
