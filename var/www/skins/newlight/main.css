@@ -124,11 +124,13 @@ legend
 	color: #2A568E;
 }
 
+.ui-dialog-buttonset,
 .toolbar 
 {
 	border-color: #2A568E;
 	background: #2A568E;
 }
+.ui-dialog-buttonset button, 
 .toolbar button {
 	color: white;
 	background: #2A568E;

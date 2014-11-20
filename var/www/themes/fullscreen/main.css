@@ -973,6 +973,9 @@ input[type="file"] {
 	border: 2px solid #2A568E;
 	border-radius: 10px;
 }
+.ui-dialog-titlebar-close {	float: right;}
+.ui-dialog-titlebar-close  .ui-button-text {display:none;}
+.ui-dialog-titlebar-close  .ui-icon {display:block; width:24px; height:24px;background-image:url("/images/close_small.gif");}
 
 
 /* cellphone format */ 
