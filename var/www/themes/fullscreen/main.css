@@ -328,6 +328,7 @@ a em {
 	border-style: solid;
 	border-top: none;
 	padding: 4px; */
+	text-align: center;
 	position: absolute;
 	width: 100%;
 }
@@ -445,7 +446,7 @@ a.tool {
 	display: inline-block;
 	color: transparent;
 	border: none;
-	margin: 0px;
+	margin: 0px 15px;
 }
 
 #logoutbutton
