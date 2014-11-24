@@ -2,7 +2,7 @@
 #desc:Newlight skin
 */
 html {
-    font: 13px/20px "Droid Sans",Arial,"Helvetica Neue","Lucida Grande",sans-serif;
+    font-family:"Droid Sans",Tahoma,"Helvetica Neue",sans-serif;
 }
 
 .categories li a{
@@ -41,7 +41,7 @@ h2 {
 } */
 
 .copyright, .copyright a {
-	color: #666;
+	color: #2A568E;;
 }
 .logout {
 	background-color: white;

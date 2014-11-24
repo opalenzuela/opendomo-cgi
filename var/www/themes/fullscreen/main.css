@@ -247,7 +247,6 @@ a, a:visited, a:active {
 #login {
 	margin-left: auto;
 	margin-right: auto;
-	width: 400px;
 }  
 form {
 	margin: 2px;
@@ -344,7 +343,7 @@ input[type=button], input[type=submit], input[type=reset], .button, .buttonlnk {
 	padding: 2px;
 	margin: 2px;
 }
-
+/*
 #USER_lbl #USER
 {
 width: 90%;
@@ -353,7 +352,7 @@ width: 90%;
 {
 width: 90%;
 } 
-
+*/
 button, .buttonlnk {
 	height:25px;
 }
@@ -665,8 +664,13 @@ p {
 	padding: 2px;
 }
 .copyright a{
+	background: url("/images/logo16.png") no-repeat left center;
 	text-decoration: none;
+	padding-left: 18px;
 	bottom:0;
+}
+.copyright img {
+	display:none;
 }
 
 
