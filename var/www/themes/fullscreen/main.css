@@ -147,7 +147,8 @@ li .imgframe {
 	text-align: center;
 	left: 0px;
 	display: block;
-	width: 100%;	
+	width: 100%;
+	font-size: x-small;
 }
 
 /* Exception: in rowforms, the fields are shown in the same row */
@@ -182,12 +183,12 @@ li .imgframe {
 	text-align:right;
 	margin-right: 3px;
 }
-
+/* TODO remove this */
 #advpad {
-	display: block;
-	margin: 15px;
+	display: none;
+/*	margin: 15px;
 	height: 50px;
-	overflow: auto;
+	overflow: auto; */
 }
 .nkey {
 	margin: 3px;
@@ -199,6 +200,7 @@ li .imgframe {
 .root, .applicationTitle{
 	display:none;
 }
+/* END TODO */
 
 /* 
  * MAIN.CSS
@@ -975,7 +977,7 @@ input[type="file"] {
 }
 .ui-dialog-titlebar-close {	float: right;}
 .ui-dialog-titlebar-close  .ui-button-text {display:none;}
-.ui-dialog-titlebar-close  .ui-icon {display:block; width:24px; height:24px;background-image:url("/images/close_small.gif");}
+.ui-dialog-titlebar-close  .ui-icon {display:block; width:24px; height:24px;background:url("/images/close_small.gif") no-repeat;}
 
 
 /* cellphone format */ 
