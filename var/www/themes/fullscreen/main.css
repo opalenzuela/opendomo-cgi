@@ -513,6 +513,7 @@ legend
 
 .wizard legend{
 	float:right;
+	text-align:right;
 }
 .wizard .toolbar {
 	text-align: right;
@@ -644,6 +645,9 @@ p {
 	display:block;
 	height:300px;
 }
+li.file iframe {
+	height: 28px;
+}
 
 .hidden {
 	display: none!important;
@@ -705,7 +709,16 @@ h2 {
 
 
 
-.info, .success, .warning, .error, .validation, .errorcont, .notice, .loading, .link, .comments {
+p.info, 
+p.success, 
+p.warning, 
+p.error, 
+p.validation, 
+p.errorcont, 
+p.notice, 
+p.loading, 
+p.link, 
+p.comments {
 	border: 1px solid;
 	margin: 10px 0px;
 	padding:15px 10px 15px 50px;
@@ -714,44 +727,48 @@ h2 {
 	padding-left: 50px!important;	
 }
 
-.message {
+p.message {
 	border: 1px solid red;
 	background: #FFFFFF;
 }
 
-.comments, .link {
+p.comments, p.link {
 	margin: 10px 0px;
 	border: none;
 }
 
-.error, .errorcont {
+p.error, p.errorcont {
 	color: #D8000C;
 	background-color: #FFBABA;
 	background-image: url('/images/default/error.png');
 }
-.warning {
+p.warning {
 	color: #9F6000;
 	background-color: #FEEFB3;
 	background-image: url('/images/default/warning.png');
 }
-.info {
+p.info {
 	color: #00529B;
 	background-color: #DFF2BF;
 	background-image: url('/images/default/notice.png');
 }
-.notice {
+p.notice {
 	color: #4F8A10;
 	background-color: #DFF2BF;
 	background-image:url('/images/default/success.png');
 }
-.loading {
+p.loading {
 	color: #00529B;
 	background-color: white;
 	background-image:url('/images/loading.gif');	
 }
-.separator {
+div.separator {
 	font-weight: bold;
 	display: block!important;
+}
+/* Provisional bugfix for CGI */
+li.separator {
+	display: none!important;
 }
 .separator a {
 
@@ -1029,6 +1046,7 @@ input[type="file"] {
 		background: url(/images/robot_wizard.png) no-repeat;
 		background-position: top left;
 		background-size: 30px;
+		padding-top: 30px;
 	}
 
 	.wizard ul{
@@ -1038,8 +1056,9 @@ input[type="file"] {
 		overflow-y: auto;
 		margin-top: 50px;
 	}
-	.wizard ul li label{
-
+	.wizard ul li {
+		display: block;
+		height: auto;
 	} 	
 	
 	/* LABELS are shown over the fields in phone format */
