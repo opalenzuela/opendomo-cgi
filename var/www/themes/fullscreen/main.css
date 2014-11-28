@@ -12,8 +12,12 @@
 	overflow-x: auto;
 	overflow-y: hidden;
 }	
-
-
+/* TRANSITIONS
+body {
+	transition: all 0.5s ease;
+	-webkit-transition: all 0.5s ease;
+}
+*/
 h2[id*='_lgnd_h2'], #logo_od,.tabberactive, .tabbernav
 {
 	display:none;
