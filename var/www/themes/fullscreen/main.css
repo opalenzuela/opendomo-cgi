@@ -711,7 +711,9 @@ h2 {
 	color: #222;
 }
 
-
+fieldset.error p {
+	margin: 25px;
+}
 
 p.info, 
 p.success, 
