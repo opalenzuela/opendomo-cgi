@@ -1,7 +1,7 @@
 #!/bin/sh
 echo "Content-type: text/html"
 echo
-TOPIC="echo $QUERY_STRING | cut -f1 -d."
+TOPIC=`echo $QUERY_STRING | cut -f1 -d.`
 echo "<html><head><link rel='stylesheet' type='text/css' media='screen' href='/cgi-bin/css.cgi?admin'></head><body>"
 if test -f /usr/local/opendomo/docs/$TOPIC.txt; then
 	echo "<fieldset>"

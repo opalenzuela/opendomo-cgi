@@ -881,7 +881,8 @@ input[type=checkbox] {
 	margin-bottom: 20px;
 }
 .ui-dialog-buttonset button,
-.toolbar button {
+.toolbar button,
+.toolbar a.button {
 	border-radius: 0px;
 	border: none;
 	padding: 0px 20px;

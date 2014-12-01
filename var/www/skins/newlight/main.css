@@ -131,11 +131,14 @@ legend
 	background: #2A568E;
 }
 .ui-dialog-buttonset button, 
-.toolbar button {
+.toolbar button,
+.toolbar a.button {
 	color: white;
 	background: #2A568E;
 }
-.toolbar button:hover{
+.ui-dialog-buttonset button:hover, 
+.toolbar button:hover, 
+.toolbar a.button:hover{
 	background: white;
 	color: #2A568E;
 }
