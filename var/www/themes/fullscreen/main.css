@@ -715,6 +715,7 @@ fieldset.error p {
 	margin: 25px;
 }
 
+p.tip,
 p.info, 
 p.success, 
 p.warning, 
@@ -750,13 +751,18 @@ p.error, p.errorcont {
 }
 p.warning {
 	color: #9F6000;
-	background-color: #FEEFB3;
+	background-color: #FECAB3;
 	background-image: url('/images/default/warning.png');
 }
 p.info {
 	color: #00529B;
 	background-color: #DFF2BF;
 	background-image: url('/images/default/notice.png');
+}
+p.tip {
+	color: #9F6000;
+	background-color: #FEEFB3;
+	background-image: url('/images/default/tip.png');
 }
 p.notice {
 	color: #4F8A10;
